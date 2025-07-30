@@ -1,0 +1,9 @@
+{
+   "resource_pack_name" : "vanilla",
+   "texture_data" : {
+      "example_pickel" : {
+         "textures" : "textures/items/example_pickel"
+      }
+   },
+   "texture_name" : "atlas.items"
+}

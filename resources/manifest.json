@@ -1,0 +1,29 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "BreakStone resources",
+		"description": "breakstoneのリソースパック",
+		"uuid": "7cab77b0-caa7-4a93-ac04-2849f1142709",
+		"version": [4, 2, 1],
+		"min_engine_version": [1, 20, 50]
+	},
+	"modules": [
+		{
+			"description": "",
+			"type": "resources",
+			"uuid": "44152fc0-374c-404e-9abf-c86a3bc1ce40",
+			"version": [4, 2, 1]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "28b93106-466c-42c6-bcb7-628fa33d0948",
+			"version": [4, 2, 1]
+		}
+	],
+	"metadata": {
+		"generated_with": {
+			"blockbench_entity_wizard": ["1.6.0"]
+		}
+	}
+}

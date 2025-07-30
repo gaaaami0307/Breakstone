@@ -1,0 +1,41 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Breakstone behavior",
+		"description": "Breakstoneのビヘイビアーパック",
+		"uuid": "28b93106-466c-42c6-bcb7-628fa33d0948",
+		"version": [4, 2, 1],
+		"min_engine_version": [1, 20, 0]
+	},
+	"modules": [
+		{
+			"description": "dummy",
+			"type": "data",
+			"uuid": "f0de633e-1772-4ada-9744-0b3396a62e21",
+			"version": [4, 2, 1]
+		},
+		{
+			"type": "script",
+			"language": "javascript",
+			"uuid": "e1a4025a-3889-4b83-b10c-55e55e64e396",
+			"entry": "scripts/main.js",
+			"version": [4, 2, 1]
+		}
+	],
+	"capabilities": ["script_eval"],
+	"dependencies": [
+		{
+			"uuid": "7cab77b0-caa7-4a93-ac04-2849f1142709",
+			"version": [4, 2, 1]
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.10.0"
+		}
+	],
+	"metadata": {
+		"generated_with": {
+			"blockbench_entity_wizard": ["1.6.0"]
+		}
+	}
+}

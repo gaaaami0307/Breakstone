@@ -1,0 +1,20 @@
+{
+    "format_version": "1.20.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "brst:example_pickel"
+        },
+        "components": {
+            "minecraft:can_destroy_in_creative": false,
+            "minecraft:hand_equipped": true,
+            "minecraft:icon":"example_pickel",
+            "minecraft:cooldown": {
+                "category": "example_pickel",
+                "duration": 30
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:damage": 1,
+            "minecraft:allow_off_hand": true
+        }
+    }
+}

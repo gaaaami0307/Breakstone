@@ -5,7 +5,7 @@
 		"description": "Breakstoneのビヘイビアーパック",
 		"uuid": "28b93106-466c-42c6-bcb7-628fa33d0948",
 		"version": [4, 2, 1],
-		"min_engine_version": [1, 20, 0]
+		"min_engine_version": [1, 21, 0]
 	},
 	"modules": [
 		{

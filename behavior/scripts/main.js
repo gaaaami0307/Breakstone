@@ -1,5 +1,5 @@
 import * as server from '@minecraft/server';
-
+console.warn("✅ Script 起動テスト OK");
 //Example
 class Example{
     cooldown = [0,0]
@@ -149,3 +149,10 @@ server.system.runInterval(ev => {
     op_player.runCommandAsync("function breakstone/"+func);
    }
 })
+
+
+server.world.beforeEvents.playerBreakBlock.subscribe(event => {
+  const id = event.brokenBlockPermutation.type.id;
+  console.warn(`Debugger: 壊されたブロックは ${id}`);
+  event.player.runCommandAsync("playsound note.pling @s");
+});

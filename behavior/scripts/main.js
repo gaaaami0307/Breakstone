@@ -1,5 +1,5 @@
 import * as server from '@minecraft/server';
-console.warn("✅ Script 起動テスト OK");
+
 //Example
 class Example{
     cooldown = [0,0]
@@ -150,9 +150,28 @@ server.system.runInterval(ev => {
    }
 })
 
+server.world.afterEvents.playerBreakBlock.subscribe(event => {
+  const brokenId = event.brokenBlockPermutation.type.id;
+  const player = event.player;
+  const inv = player.getComponent("inventory").container;
+  const slot = Number(player.selectedSlotIndex);
 
-server.world.beforeEvents.playerBreakBlock.subscribe(event => {
-  const id = event.brokenBlockPermutation.type.id;
-  console.warn(`Debugger: 壊されたブロックは ${id}`);
-  event.player.runCommandAsync("playsound note.pling @s");
+  const item = inv.getItem(slot);
+  if (!item) return;
+
+  if (item.typeId === "brst:example_pickel") {
+    const durability = item.getComponent("minecraft:durability");
+    //console.log("耐久値:" + durability.damage);
+    durability.damage++;
+    if (durability.damage >= durability.maxDurability) {
+      player.playSound("random.break", {
+        volume: 1.0,
+        pitch: 1.0
+      });
+      inv.setItem(slot, null);
+    } else {
+      inv.setItem(slot, item);
+    }
+  }
+
 });

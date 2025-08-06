@@ -2,7 +2,7 @@
   "format_version": "1.20.0",
   "minecraft:block": {
     "description": {
-      "identifier": "brst:heavy_stone",
+      "identifier": "brst:abyss_stone",
       "menu_category": { 
         "category": "Nature",
         "group": "itemGroup.name.stone"
@@ -10,18 +10,18 @@
     },
     "components": {
       "minecraft:destructible_by_mining": {
-        "seconds_to_destroy": 10
+        "seconds_to_destroy": 500
       },
       "minecraft:destructible_by_explosion": {
-        "explosion_resistance": 5
+        "explosion_resistance": 50
       },
       "minecraft:friction": 0.4,
       "minecraft:light_emission": 0,
-      "minecraft:loot": "loot_tables/blocks/heavy_stone.json",
+      "minecraft:loot": "loot_tables/blocks/abyss_stone.json",
       "minecraft:geometry": "minecraft:geometry.full_block",
       "minecraft:material_instances": {
         "*": {
-          "texture": "heavy_stone",
+          "texture": "abyss_stone",
           "render_method": "opaque"
         }
       }

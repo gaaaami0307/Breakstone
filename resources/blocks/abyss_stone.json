@@ -1,0 +1,19 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "brst:abyss_stone"
+    },
+    "components": {
+      "minecraft:creative_category": {},
+      "minecraft:geometry": "geometry.block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "abyss_stone",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:sound": "stone"
+    }
+  }
+}

@@ -6,6 +6,9 @@
   "texture_data": {
     "heavy_stone": {
       "textures": "textures/blocks/heavy_stone"
+    },
+    "abyss_stone": {
+      "textures": "textures/blocks/abyss_stone"
     }
   }
 }

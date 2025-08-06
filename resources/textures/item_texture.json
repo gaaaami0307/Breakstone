@@ -3,6 +3,9 @@
    "texture_data" : {
       "stick_pickel" : {
          "textures" : "textures/items/stick_pickel"
+      },
+      "luminite" : {
+         "textures" : "textures/items/luminite"
       }
    },
    "texture_name" : "atlas.items"

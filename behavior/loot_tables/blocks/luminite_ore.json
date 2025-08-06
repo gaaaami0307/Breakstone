@@ -5,7 +5,16 @@
       "entries":[
         {
           "type":"item",
-          "name":"brst:abyss_stone"
+          "name":"brst:luminite"
+        }
+      ]
+    }, 
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "xp",
+          "value": { "min": 15, "max": 20 }
         }
       ]
     }

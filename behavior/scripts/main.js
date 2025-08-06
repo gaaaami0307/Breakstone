@@ -157,11 +157,21 @@ server.world.afterEvents.playerBreakBlock.subscribe(event => {
   const slot = Number(player.selectedSlotIndex);
 
   const item = inv.getItem(slot);
+  //console.log("ID:" + brokenId);
+
+  //---ブロック処理
+  if(brokenId === "brst:luminite_ore"){
+    const xp = Math.floor(Math.random() * 4) + 13;
+    for (let i = 0; i < xp; i++) {
+      event.dimension.spawnEntity("minecraft:xp_orb", event.block.location);
+    }
+  }
+
   if (!item) return;
 
   if (item.typeId === "brst:stick_pickel") {
     const durability = item.getComponent("minecraft:durability");
-    //console.log("耐久値:" + durability.damage);
+    console.log("耐久値:" + durability.damage);
     durability.damage++;
     if (durability.damage >= durability.maxDurability) {
       player.playSound("random.break", {

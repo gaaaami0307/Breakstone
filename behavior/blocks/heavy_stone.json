@@ -17,6 +17,7 @@
       },
       "minecraft:friction": 0.4,
       "minecraft:light_emission": 0,
+      "minecraft:light_dampening": 15,
       "minecraft:loot": "loot_tables/blocks/heavy_stone.json",
       "minecraft:geometry": "minecraft:geometry.full_block",
       "minecraft:material_instances": {

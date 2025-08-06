@@ -9,6 +9,9 @@
     },
     "abyss_stone": {
       "textures": "textures/blocks/abyss_stone"
+    },
+    "luminite_ore": {
+      "textures": "textures/blocks/luminite_ore"
     }
   }
 }

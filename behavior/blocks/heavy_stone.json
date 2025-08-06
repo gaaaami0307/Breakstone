@@ -15,8 +15,9 @@
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 5
       },
-      "minecraft:friction": 0.6,
+      "minecraft:friction": 0.4,
       "minecraft:light_emission": 0,
+      "minecraft:loot": "loot_tables/blocks/heavy_stone.json",
       "minecraft:geometry": "minecraft:geometry.full_block",
       "minecraft:material_instances": {
         "*": {

@@ -1,0 +1,21 @@
+{
+  "pools": [
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"brst:heavy_stone",
+          "conditions":[
+            {
+              "condition":"match_tool",
+              "predicate":{
+                "item":"minecraft:stone_pickaxe"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

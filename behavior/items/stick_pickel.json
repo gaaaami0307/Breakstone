@@ -26,6 +26,9 @@
               },
               "max_durability": 10
             },
+            "minecraft:enchantable": {
+              "slot": "pickaxe"
+            },
             "minecraft:digger": {
               "use_efficiency": true,
               "destroy_speeds": [

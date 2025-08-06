@@ -1,0 +1,27 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "brst:stone_workbench"
+    },
+    "components": {
+      "minecraft:creative_category": {},
+      "minecraft:geometry": "geometry.block",
+      "minecraft:material_instances": {
+        "up": {
+          "texture": "stone_workbench_top",
+          "render_method": "opaque"
+        },
+        "down": {
+          "texture": "stone_workbench_down",
+          "render_method": "opaque"
+        },
+        "*": {
+          "texture": "stone_workbench_side",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:sound": "stone"
+    }
+  }
+}

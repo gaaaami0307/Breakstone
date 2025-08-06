@@ -159,7 +159,7 @@ server.world.afterEvents.playerBreakBlock.subscribe(event => {
   const item = inv.getItem(slot);
   if (!item) return;
 
-  if (item.typeId === "brst:example_pickel") {
+  if (item.typeId === "brst:stick_pickel") {
     const durability = item.getComponent("minecraft:durability");
     //console.log("耐久値:" + durability.damage);
     durability.damage++;

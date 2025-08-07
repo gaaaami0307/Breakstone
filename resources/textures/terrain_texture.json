@@ -24,6 +24,15 @@
     },
     "stone_workbench_bottom": {
       "textures": "textures/blocks/stone_workbench_bottom"
+    },
+    "copper_workbench_top": {
+      "textures": "textures/blocks/copper_workbench_top"
+    },
+    "copper_workbench_side": {
+      "textures": "textures/blocks/copper_workbench_side"
+    },
+    "copper_workbench_bottom": {
+      "textures": "textures/blocks/copper_workbench_bottom"
     }
   }
 }

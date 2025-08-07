@@ -2,7 +2,7 @@
   "format_version": "1.20.0",
   "minecraft:block": {
     "description": {
-      "identifier": "brst:stone_workbench",
+      "identifier": "brst:copper_workbench",
       "menu_category": { 
         "category": "Items"
       }
@@ -19,22 +19,22 @@
       "minecraft:light_dampening": 15,
       "minecraft:crafting_table":{
         "grid_size": 3,
-        "crafting_tags":["stone_workbench"],
-        "table_name": "特殊クラフトlv1"
+        "crafting_tags":["stone_workbench","copper_workbench"],
+        "table_name": "特殊クラフトlv2"
       },
-      "minecraft:loot": "loot_tables/blocks/stone_workbench.json",
+      "minecraft:loot": "loot_tables/blocks/copper_workbench.json",
       "minecraft:geometry": "minecraft:geometry.full_block",
       "minecraft:material_instances": {
         "up": {
-          "texture": "stone_workbench_top",
+          "texture": "copper_workbench_top",
           "render_method": "opaque"
         },
         "down": {
-          "texture": "stone_workbench_bottom",
+          "texture": "copper_workbench_bottom",
           "render_method": "opaque"
         },
         "*": {
-          "texture": "stone_workbench_side",
+          "texture": "copper_workbench_side",
           "render_method": "opaque"
         }
       }

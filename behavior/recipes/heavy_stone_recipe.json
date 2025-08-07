@@ -1,0 +1,21 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:heavy_stone_recipe"
+    },
+    "tags": ["stone_workbench"],
+    "pattern": [
+      "SSS",
+      "SSS",
+      "SSS"
+    ],
+    "key": {
+      "S": { "tag": "minecraft:stone_crafting_materials" }
+    },
+    "result": {
+      "item": "brst:heavy_stone",
+      "count": 1
+    }
+  }
+}

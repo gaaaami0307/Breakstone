@@ -20,7 +20,7 @@
       "minecraft:crafting_table":{
         "grid_size": 3,
         "crafting_tags":["stone_workbench"],
-        "table_name": "特殊クラフト"
+        "table_name": "特殊クラフトlv1"
       },
       "minecraft:loot": "loot_tables/blocks/stone_workbench.json",
       "minecraft:geometry": "minecraft:geometry.full_block",

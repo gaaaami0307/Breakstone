@@ -2,20 +2,18 @@
   "format_version": "1.20.0",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "brst:stick_pickel_recipe"
+      "identifier": "brst:stone_workbench_recipe"
     },
     "tags": ["crafting_table"],
     "pattern": [
-      "SSS",
-      " S ",
-      " S "
+      "SS",
+      "SS"
     ],
     "key": {
-      "I": { "item": "minecraft:iron_ingot" },
-      "S": { "item": "minecraft:stick" }
+      "S": { "tag": "minecraft:stone_crafting_materials" }
     },
     "result": {
-      "item": "brst:stick_pickel",
+      "item": "brst:stone_workbench",
       "count": 1
     }
   }

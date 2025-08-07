@@ -1,11 +1,11 @@
 {
   "pools": [
     {
-      "rolls":1,
+      "rolls":9,
       "entries":[
         {
           "type":"item",
-          "name":"brst:heavy_stone"
+          "name":"minecraft:cobblestone"
         }
       ]
     }

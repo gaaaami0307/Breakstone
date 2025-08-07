@@ -1,0 +1,22 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:stone_shovel_recipe"
+    },
+    "tags": ["stone_workbench"],
+    "pattern": [
+      "S",
+      "I",
+      "I"
+    ],
+    "key": {
+      "S": { "tag": "minecraft:stone_crafting_materials" },
+      "I": { "item": "minecraft:stick" }
+    },
+    "result": {
+      "item": "minecraft:stone_shovel",
+      "count": 1
+    }
+  }
+}

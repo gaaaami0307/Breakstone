@@ -33,6 +33,33 @@
     },
     "copper_workbench_bottom": {
       "textures": "textures/blocks/copper_workbench_bottom"
+    },
+    "diamond_workbench_top": {
+      "textures": "textures/blocks/diamond_workbench_top"
+    },
+    "diamond_workbench_side": {
+      "textures": "textures/blocks/diamond_workbench_side"
+    },
+    "diamond_workbench_bottom": {
+      "textures": "textures/blocks/diamond_workbench_bottom"
+    },
+    "abyss_workbench_top": {
+      "textures": "textures/blocks/abyss_workbench_top"
+    },
+    "abyss_workbench_side": {
+      "textures": "textures/blocks/abyss_workbench_side"
+    },
+    "abyss_workbench_bottom": {
+      "textures": "textures/blocks/abyss_workbench_bottom"
+    },
+    "luminite_workbench_top": {
+      "textures": "textures/blocks/luminite_workbench_top"
+    },
+    "luminite_workbench_side": {
+      "textures": "textures/blocks/luminite_workbench_side"
+    },
+    "luminite_workbench_bottom": {
+      "textures": "textures/blocks/luminite_workbench_bottom"
     }
   }
 }

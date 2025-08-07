@@ -1,0 +1,43 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "brst:diamond_workbench",
+      "menu_category": { 
+        "category": "Items"
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 2
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 2
+      },
+      "minecraft:friction": 0.4,
+      "minecraft:light_emission": 0,
+      "minecraft:light_dampening": 15,
+      "minecraft:crafting_table":{
+        "grid_size": 3,
+        "crafting_tags":["stone_workbench","copper_workbench","diamond_workbench"],
+        "table_name": "特殊クラフトlv3"
+      },
+      "minecraft:loot": "loot_tables/blocks/diamond_workbench.json",
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": {
+        "up": {
+          "texture": "diamond_workbench_top",
+          "render_method": "opaque"
+        },
+        "down": {
+          "texture": "diamond_workbench_bottom",
+          "render_method": "opaque"
+        },
+        "*": {
+          "texture": "diamond_workbench_side",
+          "render_method": "opaque"
+        }
+      }
+    }
+  }
+}

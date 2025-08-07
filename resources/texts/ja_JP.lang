@@ -7,3 +7,6 @@ tile.brst:luminite_ore.name=深淵ルミナイト鉱石
 tile.brst:luminite_block.name=ルミナイトブロック
 tile.brst:stone_workbench.name=石の作業台
 tile.brst:copper_workbench.name=銅の作業台
+tile.brst:diamond_workbench.name=§bダイヤモンドの作業台
+tile.brst:abyss_workbench.name=§5深淵の作業台
+tile.brst:luminite_workbench.name=§6ルミナイトの作業台

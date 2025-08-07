@@ -1,0 +1,22 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:umai_stick_stone_recipe"
+    },
+    "tags": ["stone_workbench"],
+    "pattern": [
+      "III",
+      "ISI",
+      "III"
+    ],
+    "key": {
+      "S": { "tag": "minecraft:stone_crafting_materials" },
+      "I": { "item": "minecraft:stick" }
+    },
+    "result": {
+      "item": "brst:umai_stick_stone",
+      "count": 8
+    }
+  }
+}

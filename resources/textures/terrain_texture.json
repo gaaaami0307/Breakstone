@@ -13,6 +13,9 @@
     "luminite_ore": {
       "textures": "textures/blocks/luminite_ore"
     },
+    "luminite_block": {
+      "textures": "textures/blocks/luminite_block"
+    },
     "stone_workbench_top": {
       "textures": "textures/blocks/stone_workbench_top"
     },

@@ -2,14 +2,14 @@
   "format_version": "1.20.0",
   "minecraft:block": {
     "description": {
-      "identifier": "brst:luminite_ore"
+      "identifier": "brst:luminite_block"
     },
     "components": {
       "minecraft:creative_category": {},
       "minecraft:geometry": "geometry.block",
       "minecraft:material_instances": {
         "*": {
-          "texture": "luminite_ore",
+          "texture": "luminite_block",
           "render_method": "opaque"
         }
       },

@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:blast_furnace_recipe"
+    },
+    "tags": ["stone_workbench"],
+    "pattern": [
+      "HHH",
+      "S S",
+      "SCS"
+    ],
+    "key": {
+      "H": { "item": "brst:heavy_stone" },
+      "S": { "tag": "minecraft:stone_crafting_materials" },
+      "C": { "item": "minecraft:coal" }
+    },
+    "result": {
+      "item": "minecraft:blast_furnace",
+      "count": 1
+    }
+  }
+}

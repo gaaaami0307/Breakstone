@@ -1,0 +1,21 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:furnace_recipe"
+    },
+    "tags": ["stone_workbench"],
+    "pattern": [
+      "SSS",
+      "S S",
+      "SSS"
+    ],
+    "key": {
+      "S": { "tag": "minecraft:stone_crafting_materials" }
+    },
+    "result": {
+      "item": "minecraft:furnace",
+      "count": 1
+    }
+  }
+}

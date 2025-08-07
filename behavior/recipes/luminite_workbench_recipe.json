@@ -1,0 +1,24 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:luminite_workbench_recipe"
+    },
+    "tags": ["abyss_workbench"],
+    "pattern": [
+      "LLL",
+      "SBS",
+      "AAA"
+    ],
+    "key": {
+      "L": { "item": "brst:luminite" },
+      "A": { "item": "brst:abyss_stone" },
+      "S": { "item": "minecraft:sculk" },
+      "B": { "item": "brst:luminite_block" }
+    },
+    "result": {
+      "item": "brst:luminite_workbench",
+      "count": 1
+    }
+  }
+}

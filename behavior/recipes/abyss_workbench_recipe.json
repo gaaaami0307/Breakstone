@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:abyss_workbench_recipe"
+    },
+    "tags": ["diamond_workbench"],
+    "pattern": [
+      "SSS",
+      "ODO",
+      "OOO"
+    ],
+    "key": {
+      "O": { "item": "minecraft:obsidian" },
+      "S": { "item": "minecraft:sculk" },
+      "D": { "item": "minecraft:diamond_block" }
+    },
+    "result": {
+      "item": "brst:abyss_workbench",
+      "count": 1
+    }
+  }
+}

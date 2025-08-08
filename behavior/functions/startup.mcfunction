@@ -13,3 +13,4 @@ scoreboard objectives add edge dummy
 scoreboard objectives add MAX dummy
 scoreboard objectives add multi dummy
 scoreboard objectives add loop1 dummy 
+scoreboard objectives add looplimit dummy 

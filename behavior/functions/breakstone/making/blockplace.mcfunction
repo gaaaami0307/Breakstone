@@ -1,1 +1,1 @@
-execute as @e[type=brst:maker] as @s at @s run setblock ~~-1~ minecraft:iron_block
+execute as @e[type=brst:maker] as @s at @s run setblock ~~-1~ minecraft:coal_ore

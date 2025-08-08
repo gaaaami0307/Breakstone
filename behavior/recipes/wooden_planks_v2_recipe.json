@@ -1,0 +1,21 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:wooden_planks_v2_recipe"
+    },
+    "tags": ["stone_workbench"],
+    "pattern": [
+      "II",
+      "II",
+      "II"
+    ],
+    "key": {
+      "I": { "item": "minecraft:stick" }
+    },
+    "result": {
+      "item": "minecraft:oak_planks",
+      "count": 1
+    }
+  }
+}

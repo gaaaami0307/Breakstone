@@ -131,7 +131,7 @@ server.system.runInterval(ev => {
 
    const entities=[];
 
-   const breakstoneentities=[];
+   const breakstoneentities=["maker"];
 
    const breakstonefunctions=[];
 

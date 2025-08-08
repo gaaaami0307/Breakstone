@@ -4,7 +4,7 @@
     "description": {
       "identifier": "brst:wooden_planks_v2_recipe"
     },
-    "tags": ["stone_workbench"],
+    "tags": ["copper_workbench"],
     "pattern": [
       "II",
       "II",

@@ -23,7 +23,7 @@ execute as @e[type=brst:maker] as @s[scores={floor=1..6}] as @s[scores={death_ti
 #通常生成
 execute as @e[type=brst:maker] as @s[scores={floor=1..5}] as @s[scores={death_timer=10..60}] at @s run setblock ~~~ minecraft:stone
 #鉱石生成
-execute as @e[type=brst:maker] as @s[scores={floor=1..5}] as @s[scores={death_timer=10..60}] as @s[scores={rnd=1..150}] at @s run setblock ~~~ minecraft:coal_ore
+execute as @e[type=brst:maker] as @s[scores={floor=1..5}] as @s[scores={death_timer=10..60}] as @s[scores={rnd=1..200}] at @s run setblock ~~~ minecraft:coal_ore
 execute as @e[type=brst:maker] as @s[scores={floor=1..5}] as @s[scores={death_timer=10..60}] as @s[scores={rnd=1001..1100}] at @s run setblock ~~~ minecraft:copper_ore
 execute as @e[type=brst:maker] as @s[scores={floor=1..5}] as @s[scores={death_timer=10..60}] as @s[scores={rnd=2001..2050}] at @s run setblock ~~~ brst:heavy_stone
 execute as @e[type=brst:maker] as @s[scores={floor=1..5}] as @s[scores={death_timer=10..60}] as @s[scores={rnd=3001..3030}] at @s run setblock ~~~ minecraft:lapis_ore

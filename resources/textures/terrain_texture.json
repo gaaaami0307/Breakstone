@@ -60,6 +60,9 @@
     },
     "luminite_workbench_bottom": {
       "textures": "textures/blocks/luminite_workbench_bottom"
+    },
+    "black_shield_stone": {
+      "textures": "textures/blocks/black_shield_stone"
     }
   }
 }

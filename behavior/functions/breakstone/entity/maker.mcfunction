@@ -7,11 +7,12 @@
 #setup = 各回の設定
 #moving = 動いてる途中
 execute as @e[type=brst:maker] as @s[tag=!setup] at @s run scoreboard players add @s death_timer 1
+execute as @e[type=brst:maker] at @s if score @s death_timer = @s MAX run kill @s
 execute as @e[type=brst:maker] as @s[tag=!setup] at @s run scoreboard players set @s edge 0
 execute as @e[type=brst:maker] as @s[tag=!setup] at @s run tp ~1 ~ ~1
 execute as @e[type=brst:maker] as @s[tag=!setup] at @s run tag @s add setup
 execute as @e[type=brst:maker] as @s at @s run scoreboard players set @s looplimit 0
-execute as @e[type=brst:maker] at @s run tp @p @s
+execute as @e[type=brst:maker] at @s run tp @p ~~7~
 execute as @e[type=brst:maker] at @s run function breakstone/making/ready_move
 execute as @e[type=brst:maker] as @s[scores={edge=5..}] at @s run tag @s remove moving
 execute as @e[type=brst:maker] as @s[scores={edge=5..}] at @s run tag @s remove setup

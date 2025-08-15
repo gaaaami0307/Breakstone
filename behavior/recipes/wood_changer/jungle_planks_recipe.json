@@ -9,7 +9,7 @@
       "P"
     ],
     "key": {
-      "P": { "tag": "minecraft:planks" }
+      "P": { "item": "minecraft:birch_planks" }
     },
     "result": {
       "item": "minecraft:jungle_planks",

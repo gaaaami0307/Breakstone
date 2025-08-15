@@ -61,6 +61,12 @@
     "luminite_workbench_bottom": {
       "textures": "textures/blocks/luminite_workbench_bottom"
     },
+    "wood_changer_top": {
+      "textures": "textures/blocks/wood_changer_top"
+    },
+    "wood_changer_side": {
+      "textures": "textures/blocks/wood_changer_side"
+    },
     "black_shield_stone": {
       "textures": "textures/blocks/black_shield_stone"
     }

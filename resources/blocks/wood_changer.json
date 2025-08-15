@@ -1,0 +1,27 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "brst:wood_changer"
+    },
+    "components": {
+      "minecraft:creative_category": {},
+      "minecraft:geometry": "geometry.block",
+      "minecraft:material_instances": {
+        "up": {
+          "texture": "wood_changer_top",
+          "render_method": "opaque"
+        },
+        "down": {
+          "texture": "wood_changer_top",
+          "render_method": "opaque"
+        },
+        "*": {
+          "texture": "wood_changer_side",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:sound": "wood"
+    }
+  }
+}

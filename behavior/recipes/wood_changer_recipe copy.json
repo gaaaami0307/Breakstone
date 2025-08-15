@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:wood_changer_recipe"
+    },
+    "tags": ["diamond_workbench"],
+    "pattern": [
+      "PRP",
+      "RGR",
+      "PRP"
+    ],
+    "key": {
+      "R": { "item": "minecraft:redstone" },
+      "P": { "tag": "minecraft:planks" },
+      "G": { "item": "minecraft:gold_block" }
+    },
+    "result": {
+      "item": "brst:wood_changer",
+      "count": 1
+    }
+  }
+}

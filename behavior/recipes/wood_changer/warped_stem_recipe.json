@@ -1,0 +1,20 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:warped_stem_recipe"
+    },
+    "tags": ["wood_changer"],
+    "pattern": [
+      "PP",
+      "PP"
+    ],
+    "key": {
+      "P": { "item": "minecraft:warped_planks" }
+    },
+    "result": {
+      "item": "minecraft:warped_stem",
+      "count": 1
+    }
+  }
+}

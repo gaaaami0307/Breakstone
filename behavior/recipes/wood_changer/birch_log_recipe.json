@@ -1,0 +1,20 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:birch_log_recipe"
+    },
+    "tags": ["wood_changer"],
+    "pattern": [
+      "PP",
+      "PP"
+    ],
+    "key": {
+      "P": { "item": "minecraft:birch_planks" }
+    },
+    "result": {
+      "item": "minecraft:birch_log",
+      "count": 1
+    }
+  }
+}

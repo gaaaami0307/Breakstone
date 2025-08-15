@@ -1,0 +1,21 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:oak_planks_9_recipe"
+    },
+    "tags": ["wood_changer"],
+    "pattern": [
+      "PPP",
+      "PPP",
+      "PPP"
+    ],
+    "key": {
+      "P": { "tag": "minecraft:planks" }
+    },
+    "result": {
+      "item": "minecraft:oak_planks",
+      "count": 9
+    }
+  }
+}

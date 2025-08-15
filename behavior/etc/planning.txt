@@ -34,6 +34,18 @@
 
 はめる位置:
 5000 -57 5000
+検知 
+各ブロック -120 -60 -120からexecuteで
+block -120 -60 -120 coal_block
+block -120 -59 -120 stone  (copper_block)
+block -120 -58 -120 lapis_block
+block -120 -57 -120 iron_block
+block -120 -56 -120 redstone_block
+block -120 -55 -120 gold_block
+block -120 -54 -120 diamond_block
+block -120 -53 -120 emerald_block
+block -120 -52 -120 quartz_block
+block -120 -51 -120 brst:luminite_block
 
 施設
 ・枯れ木

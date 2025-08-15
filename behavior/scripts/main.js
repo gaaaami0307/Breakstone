@@ -133,7 +133,7 @@ server.system.runInterval(ev => {
 
    const breakstoneentities=["maker","fac_stick"];
 
-   const breakstonefunctions=[];
+   const breakstonefunctions=["block_upgrade"];
 
    const op_player = server.world.getAllPlayers()[0];
    for (const entity of entities){

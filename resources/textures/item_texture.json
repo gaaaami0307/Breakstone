@@ -10,6 +10,15 @@
       "luminite" : {
          "textures" : "textures/items/luminite"
       },
+      "artifact_crystal1" : {
+         "textures" : "textures/items/artifact_crystal1"
+      },
+      "artifact_crystal2" : {
+         "textures" : "textures/items/artifact_crystal2"
+      },
+      "artifact_crystal3" : {
+         "textures" : "textures/items/artifact_crystal3"
+      },
       "torch_artifact" : {
          "textures" : "textures/items/torch_artifact"
       }

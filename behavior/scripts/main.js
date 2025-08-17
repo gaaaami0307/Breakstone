@@ -123,7 +123,11 @@ server.system.runInterval(ev => {
     //---各プレイヤー処理-----
 
     for (const player of server.world.getAllPlayers()){
-
+      if(player.isSneaking){
+        player.runCommandAsync("scoreboard players add @s sneak_time 1")
+      }else{
+        player.runCommandAsync("scoreboard players set @s sneak_time 0")
+      }
    }
 
    //---------------------

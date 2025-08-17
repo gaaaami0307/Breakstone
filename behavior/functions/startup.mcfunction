@@ -16,3 +16,5 @@ scoreboard objectives add loop1 dummy
 scoreboard objectives add looplimit dummy 
 scoreboard objectives add floor dummy 
 scoreboard objectives add rnd dummy 
+#track
+scoreboard objectives add sneak_time dummy 

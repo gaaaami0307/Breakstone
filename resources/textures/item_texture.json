@@ -9,6 +9,9 @@
       },
       "luminite" : {
          "textures" : "textures/items/luminite"
+      },
+      "torch_artifact" : {
+         "textures" : "textures/items/torch_artifact"
       }
    },
    "texture_name" : "atlas.items"

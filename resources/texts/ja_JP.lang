@@ -1,6 +1,7 @@
 item.brst:stick_pickaxe=棒のツルハシ
 item.brst:luminite=ルミナイト
 item.brst:umai_stick_stone=うまい棒§8 石味
+item.brst:torch_artifact=§5超松明錬成のアーティファクト
 tile.brst:heavy_stone.name=重石
 tile.brst:abyss_stone.name=深淵石
 tile.brst:luminite_ore.name=深淵ルミナイト鉱石

@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:artifact_crystal1_recipe"
+    },
+    "tags": ["copper_workbench"],
+    "pattern": [
+      "RCR",
+      "CLC",
+      "RCR"
+    ],
+    "key": {
+      "R": { "item": "minecraft:redstone" },
+      "C": { "item": "minecraft:copper_block" },
+      "L": { "item": "minecraft:lapis_block" }
+    },
+    "result": {
+      "item": "brst:artifact_crystal1",
+      "count": 1
+    }
+  }
+}

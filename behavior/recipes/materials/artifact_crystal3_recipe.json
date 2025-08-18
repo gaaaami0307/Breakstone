@@ -1,0 +1,26 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:artifact_crystal3_recipe"
+    },
+    "tags": ["luminite_workbench"],
+    "pattern": [
+      "ERG",
+      "RgR",
+      "QRL"
+    ],
+    "key": {
+      "E": { "item": "minecraft:emerald_block" },
+      "G": { "item": "minecraft:gold_block" },
+      "L": { "item": "brst:luminite_block" },
+      "Q": { "item": "minecraft:quartz_block" },
+      "R": { "item": "minecraft:redstone_block" },
+      "g": { "item": "minecraft:glowstone_dust" }
+    },
+    "result": {
+      "item": "brst:artifact_crystal3",
+      "count": 1
+    }
+  }
+}

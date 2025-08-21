@@ -1,0 +1,22 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:water_artifact_recipe"
+    },
+    "tags": ["copper_workbench"],
+    "pattern": [
+      " M ",
+      "McM",
+      " M "
+    ],
+    "key": {
+      "M": { "item": "minecraft:lapis_lazuli" },
+      "c": { "item": "brst:artifact_crystal1" }
+    },
+    "result": {
+      "item": "brst:water_artifact",
+      "count": 1
+    }
+  }
+}

@@ -17,7 +17,52 @@
          "textures" : "textures/items/artifact_crystal2"
       },
       "artifact_crystal3" : {
-         "textures" : "textures/items/artifact_crystal3"
+          "textures" : "textures/items/artifact_crystal3"
+      },
+      "lava_artifact" : {
+          "textures" : "textures/items/lava_artifact"
+      },
+      "water_artifact" : {
+          "textures" : "textures/items/water_artifact"
+      },
+      "liquid_artifact" : {
+          "textures" : "textures/items/liquid_artifact"
+      },
+      "attack_artifact1" : {
+          "textures" : "textures/items/attack_artifact1"
+      },
+      "attack_artifact2" : {
+          "textures" : "textures/items/attack_artifact2"
+      },
+      "attack_artifact3" : {
+          "textures" : "textures/items/attack_artifact3"
+      },
+      "mining_artifact1" : {
+          "textures" : "textures/items/mining_artifact1"
+      },
+      "mining_artifact2" : {
+          "textures" : "textures/items/mining_artifact2"
+      },
+      "mining_artifact3" : {
+          "textures" : "textures/items/mining_artifact3"
+      },
+      "shield_artifact1" : {
+          "textures" : "textures/items/shield_artifact1"
+      },
+      "shield_artifact2" : {
+          "textures" : "textures/items/shield_artifact2"
+      },
+      "shield_artifact3" : {
+          "textures" : "textures/items/shield_artifact3"
+      },
+      "speed_artifact1" : {
+          "textures" : "textures/items/speed_artifact1"
+      },
+      "speed_artifact2" : {
+          "textures" : "textures/items/speed_artifact2"
+      },
+      "speed_artifact3" : {
+          "textures" : "textures/items/speed_artifact3"
       },
       "torch_artifact" : {
          "textures" : "textures/items/torch_artifact"

@@ -1,0 +1,22 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:attack_artifact1_recipe"
+    },
+    "tags": ["diamond_workbench"],
+    "pattern": [
+      " M ",
+      "McM",
+      " M "
+    ],
+    "key": {
+      "M": { "item": "minecraft:gold_ingot" },
+      "c": { "item": "brst:artifact_crystal1" }
+    },
+    "result": {
+      "item": "brst:attack_artifact1",
+      "count": 1
+    }
+  }
+}

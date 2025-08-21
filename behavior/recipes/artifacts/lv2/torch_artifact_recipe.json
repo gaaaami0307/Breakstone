@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:torch_artifact_recipe"
+    },
+    "tags": ["abyss_workbench"],
+    "pattern": [
+      "TMT",
+      "McM",
+      "TMT"
+    ],
+    "key": {
+      "T": { "item": "minecraft:torch" },
+      "M": { "item": "minecraft:coal" },
+      "c": { "item": "brst:artifact_crystal2" }
+    },
+    "result": {
+      "item": "brst:torch_artifact",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:shield_artifact1_recipe"
+    },
+    "tags": ["copper_workbench"],
+    "pattern": [
+      " M ",
+      "McM",
+      " M "
+    ],
+    "key": {
+      "M": { "item": "minecraft:iron_ingot" },
+      "c": { "item": "brst:artifact_crystal1" }
+    },
+    "result": {
+      "item": "brst:shield_artifact1",
+      "count": 1
+    }
+  }
+}

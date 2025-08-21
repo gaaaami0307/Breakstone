@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:attack_artifact3_recipe"
+    },
+    "tags": ["luminite_workbench"],
+    "pattern": [
+      "MaM",
+      "McM",
+      "MMM"
+    ],
+    "key": {
+      "M": { "item": "minecraft:gold_block" },
+      "a": { "item": "brst:attack_artifact2" },
+      "c": { "item": "brst:artifact_crystal3" }
+    },
+    "result": {
+      "item": "brst:attack_artifact3",
+      "count": 1
+    }
+  }
+}

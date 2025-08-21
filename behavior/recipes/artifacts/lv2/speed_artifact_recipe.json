@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:speed_artifact2_recipe"
+    },
+    "tags": ["abyss_workbench"],
+    "pattern": [
+      " a ",
+      "McM",
+      " M "
+    ],
+    "key": {
+      "M": { "item": "minecraft:copper_block" },
+      "a": { "item": "brst:speed_artifact1" },
+      "c": { "item": "brst:artifact_crystal2" }
+    },
+    "result": {
+      "item": "brst:speed_artifact2",
+      "count": 1
+    }
+  }
+}

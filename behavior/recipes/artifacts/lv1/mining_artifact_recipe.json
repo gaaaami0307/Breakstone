@@ -1,0 +1,22 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:mining_artifact1_recipe"
+    },
+    "tags": ["diamond_workbench"],
+    "pattern": [
+      " M ",
+      "McM",
+      " M "
+    ],
+    "key": {
+      "M": { "item": "minecraft:emerald" },
+      "c": { "item": "brst:artifact_crystal1" }
+    },
+    "result": {
+      "item": "brst:mining_artifact1",
+      "count": 1
+    }
+  }
+}

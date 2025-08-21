@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:mining_artifact2_recipe"
+    },
+    "tags": ["abyss_workbench"],
+    "pattern": [
+      " a ",
+      "McM",
+      " M "
+    ],
+    "key": {
+      "M": { "item": "minecraft:emerald_block" },
+      "a": { "item": "brst:mining_artifact1" },
+      "c": { "item": "brst:artifact_crystal2" }
+    },
+    "result": {
+      "item": "brst:mining_artifact2",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:lava_artifact_recipe"
+    },
+    "tags": ["diamond_workbench"],
+    "pattern": [
+      " C ",
+      "CcC",
+      " C "
+    ],
+    "key": {
+      "C": { "item": "minecraft:coal" },
+      "c": { "item": "brst:artifact_crystal1" }
+    },
+    "result": {
+      "item": "brst:lava_artifact",
+      "count": 1
+    }
+  }
+}

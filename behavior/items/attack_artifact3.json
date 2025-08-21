@@ -2,16 +2,17 @@
     "format_version": "1.20.100",
     "minecraft:item": {
         "description": {
-            "identifier": "brst:torch_artifact",
+            "identifier": "brst:attack_artifact3",
             "menu_category": {
               "category": "equipment"
             }
         },
         "components": {
             "minecraft:hand_equipped": false,
-            "minecraft:icon":"torch_artifact",
+            "minecraft:icon":"attack_artifact3",
             "minecraft:max_stack_size": 1,
-            "minecraft:glint": false
+            "minecraft:glint": true,
+            "minecraft:allow_off_hand": false
         }
     }
 }

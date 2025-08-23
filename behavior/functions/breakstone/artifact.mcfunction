@@ -51,3 +51,7 @@ execute as @a as @s[hasitem={item=brst:mining_artifact3}] at @s positioned ^^^ r
 execute as @a as @s[hasitem={item=brst:shield_artifact1}] at @s positioned ^^^ run effect @a[r=100] resistance 12 0 true
 execute as @a as @s[hasitem={item=brst:shield_artifact2}] at @s positioned ^^^ run effect @a[r=100] resistance 12 1 true
 execute as @a as @s[hasitem={item=brst:shield_artifact3}] at @s positioned ^^^ run effect @a[r=100] resistance 12 2 true
+#speed_artifact
+execute as @a as @s[hasitem={item=brst:speed_artifact1}] at @s positioned ^^^ run effect @a[r=100] speed 12 0 true
+execute as @a as @s[hasitem={item=brst:speed_artifact2}] at @s positioned ^^^ run effect @a[r=100] speed 12 1 true
+execute as @a as @s[hasitem={item=brst:speed_artifact3}] at @s positioned ^^^ run effect @a[r=100] speed 12 2 true

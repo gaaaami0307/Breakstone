@@ -39,3 +39,7 @@ execute as @a as @s[tag=art_emp] at @s run clear @s minecraft:lava_bucket 0 1
 execute as @a as @s[tag=art_emp] at @s run give @s minecraft:bucket 1
 execute as @a as @s[tag=art_emp] at @s run scoreboard players set @s sneak_time 0
 execute as @a as @s[tag=art_emp] at @s run tag @s remove art_emp
+#attack_artifact
+execute as @a as @s[hasitem={item=brst:attack_artifact1}] at @s positioned ^^^ run effect @a[r=100] strength 12 0 true
+execute as @a as @s[hasitem={item=brst:attack_artifact2}] at @s positioned ^^^ run effect @a[r=100] strength 12 1 true
+execute as @a as @s[hasitem={item=brst:attack_artifact3}] at @s positioned ^^^ run effect @a[r=100] strength 12 2 true

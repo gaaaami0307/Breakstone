@@ -1,0 +1,22 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:heavystone_pickaxe_recipe"
+    },
+    "tags": ["copper_workbench"],
+    "pattern": [
+      "HHH",
+      " S ",
+      " S "
+    ],
+    "key": {
+      "H": { "item": "brst:heavy_stone" },
+      "S": { "item": "minecraft:stick" }
+    },
+    "result": {
+      "item": "brst:heavystone_pickaxe",
+      "count": 1
+    }
+  }
+}

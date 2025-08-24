@@ -7,6 +7,9 @@
       "heavystone_pickaxe" : {
          "textures" : "textures/items/heavystone_pickaxe"
       },
+      "heavyiron_pickaxe" : {
+         "textures" : "textures/items/heavyiron_pickaxe"
+      },
       "umai_stick_stone" : {
          "textures" : "textures/items/umai_stick_stone"
       },

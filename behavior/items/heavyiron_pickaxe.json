@@ -2,29 +2,29 @@
     "format_version": "1.20.100",
     "minecraft:item": {
         "description": {
-            "identifier": "brst:heavystone_pickaxe",
+            "identifier": "brst:heavyiron_pickaxe",
             "menu_category": {
               "category": "equipment",
               "group": "itemGroup.name.pickaxe",
-              "priority": 1
+              "priority": 2
             }
         },
         "components": {
             "minecraft:can_destroy_in_creative": false,
             "minecraft:hand_equipped": true,
-            "minecraft:icon":"heavystone_pickaxe",
+            "minecraft:icon":"heavyiron_pickaxe",
             "minecraft:cooldown": {
-                "category": "heavystone_pickaxe",
+                "category": "heavyiron_pickaxe",
                 "duration": 30
             },
             "minecraft:max_stack_size": 1,
-            "minecraft:damage": 4,
+            "minecraft:damage": 5,
             "minecraft:durability": {
               "damage_chance": {
                 "min": 0.5,
                 "max": 1
               },
-              "max_durability": 180
+              "max_durability": 750
             },
             "minecraft:enchantable": {
               "value": 10,
@@ -33,12 +33,13 @@
             "minecraft:digger": {
               "use_efficiency": true,
               "destroy_speeds": [
-              { "speed": 10, "block": "minecraft:stone" },
-              { "speed": 10, "block": "minecraft:cobblestone" },
-              { "speed": 10, "block": "brst:heavy_stone" },
-              { "speed": 10, "block": "minecraft:blackstone" },
-              { "speed": 10, "block": "minecraft:deepslate" },
-              { "speed": 10, "block": "minecraft:cobbled_deepslate" }
+              { "speed": 15, "block": "minecraft:stone" },
+              { "speed": 15, "block": "minecraft:cobblestone" },
+              { "speed": 15, "block": "brst:heavy_stone" },
+              { "speed": 15, "block": "minecraft:blackstone" },
+              { "speed": 15, "block": "minecraft:deepslate" },
+              { "speed": 15, "block": "minecraft:cobbled_deepslate" },
+              { "speed": 15, "block": "minecraft:obsidian" }
             ]
           }
         }

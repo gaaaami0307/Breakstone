@@ -13,6 +13,9 @@
       "umai_stick_stone" : {
          "textures" : "textures/items/umai_stick_stone"
       },
+      "iron_stick" : {
+         "textures" : "textures/items/iron_stick"
+      },
       "luminite" : {
          "textures" : "textures/items/luminite"
       },

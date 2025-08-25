@@ -56,14 +56,14 @@ execute positioned 5000 -57 5000 if block ~~~ emerald_block unless block -120 -5
 execute positioned 5000 -57 5000 if block ~~~ emerald_block unless block -120 -53 -120 emerald_block run setblock -120 -53 -120 minecraft:emerald_block
 #クォーツブロック
 execute positioned 5000 -57 5000 if block ~~~ quartz_block unless block -120 -52 -120 quartz_block run tellraw @a { "rawtext": [{"text":"＝＝＝＝＝＝＝＝＝＝＝＝＝\n§6【新しい鉱石ブロックを検知しました】§r"}] }
-execute positioned 5000 -57 5000 if block ~~~ quartz_block unless block -120 -52 -120 quartz_block run tellraw @a { "rawtext": [{"text":"\n§a<クォーツブロック>§r\n\n§cクォーツビーム§r能力が解放されました。\nクォーツを持ってしゃがむとビームを発射します。\nビームは基礎ブロックを破壊します。\n＝＝＝＝＝＝＝＝＝＝＝＝＝"}] }
+execute positioned 5000 -57 5000 if block ~~~ quartz_block unless block -120 -52 -120 quartz_block run tellraw @a { "rawtext": [{"text":"\n§a<クォーツブロック>§r\n\n§cクォーツマイニング§r能力が解放されました。\nクォーツブロックの上に立つと、採掘速度上昇Vが付きます。\n＝＝＝＝＝＝＝＝＝＝＝＝＝"}] }
 execute positioned 5000 -57 5000 if block ~~~ quartz_block unless block -120 -52 -120 quartz_block run playsound note.bit @a ~~~ 1 1
 execute positioned 5000 -57 5000 if block ~~~ quartz_block unless block -120 -52 -120 quartz_block run particle minecraft:totem_particle ~~~
 execute positioned 5000 -57 5000 if block ~~~ quartz_block unless block -120 -52 -120 quartz_block run setblock -120 -50 -120 minecraft:glass
 execute positioned 5000 -57 5000 if block ~~~ quartz_block unless block -120 -52 -120 quartz_block run setblock -120 -52 -120 minecraft:quartz_block
 #ルミナイトブロック
 execute positioned 5000 -57 5000 if block ~~~ brst:luminite_block unless block -120 -51 -120 brst:luminite_block run tellraw @a { "rawtext": [{"text":"＝＝＝＝＝＝＝＝＝＝＝＝＝\n§6【新しい鉱石ブロックを検知しました】§r"}] }
-execute positioned 5000 -57 5000 if block ~~~ brst:luminite_block unless block -120 -51 -120 brst:luminite_block run tellraw @a { "rawtext": [{"text":"\n§a<ルミナイトブロック>§r\n\n§cルミナイトマイニング§r能力が解放されました。\nルミナイトブロックの上に立つと、採掘速度上昇Vが付きます。\n＝＝＝＝＝＝＝＝＝＝＝＝＝"}] }
+execute positioned 5000 -57 5000 if block ~~~ brst:luminite_block unless block -120 -51 -120 brst:luminite_block run tellraw @a { "rawtext": [{"text":"\n§a<ルミナイトブロック>§r\n\n§cオールアップグレード§r能力が解放されました。\n攻撃・頑丈・採掘・移動のアーティファクトの効果が一段階上昇しました。\n＝＝＝＝＝＝＝＝＝＝＝＝＝"}] }
 execute positioned 5000 -57 5000 if block ~~~ brst:luminite_block unless block -120 -51 -120 brst:luminite_block run playsound note.bit @a ~~~ 1 1
 execute positioned 5000 -57 5000 if block ~~~ brst:luminite_block unless block -120 -51 -120 brst:luminite_block run particle minecraft:totem_particle ~~~
 execute positioned 5000 -57 5000 if block ~~~ brst:luminite_block unless block -120 -51 -120 brst:luminite_block run setblock -120 -50 -120 minecraft:glass

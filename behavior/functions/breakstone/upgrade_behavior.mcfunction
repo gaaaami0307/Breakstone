@@ -2,8 +2,8 @@
 execute if block -120 -58 -120 lapis_block as @a at @s if block ~~-0.5~ minecraft:coal_block run effect @s speed 3 4 
 #エメラルド
 execute if block -120 -53 -120 emerald_block as @a at @s if block ~~-0.5~ minecraft:emerald_block run effect @s speed 3 14 
-#ルミナイト
-execute if block -120 -51 -120 brst:luminite_block as @a at @s if block ~~-0.5~ brst:luminite_block run effect @s haste 1 4
+#クォーツ
+execute if block -120 -52 -120 quartz_block as @a at @s if block ~~-0.5~ quartz_block run effect @s haste 1 4
 #金-松明錬成
 execute if block -120 -55 -120 gold_block as @a as @s[hasitem={item=minecraft:stick,location=slot.weapon.mainhand},scores={sneak_time=1..}] at @s positioned ^^^1 run particle minecraft:basic_flame_particle ~~1.5~
 execute if block -120 -55 -120 gold_block as @a as @s[hasitem={item=minecraft:stick,location=slot.weapon.mainhand},scores={sneak_time=20..}] at @s run playsound mob.blaze.shoot @a ~~~ 0.8 1.3

@@ -43,15 +43,27 @@ execute as @a as @s[tag=art_emp] at @s run tag @s remove art_emp
 execute as @a as @s[hasitem={item=brst:attack_artifact1}] at @s positioned ^^^ run effect @a[r=100] strength 12 0 true
 execute as @a as @s[hasitem={item=brst:attack_artifact2}] at @s positioned ^^^ run effect @a[r=100] strength 12 1 true
 execute as @a as @s[hasitem={item=brst:attack_artifact3}] at @s positioned ^^^ run effect @a[r=100] strength 12 2 true
+execute if block -120 -51 -120 brst:luminite_block as @a as @s[hasitem={item=brst:attack_artifact1}] at @s positioned ^^^ run effect @a[r=100] strength 12 1 true
+execute if block -120 -51 -120 brst:luminite_block as @a as @s[hasitem={item=brst:attack_artifact2}] at @s positioned ^^^ run effect @a[r=100] strength 12 2 true
+execute if block -120 -51 -120 brst:luminite_block as @a as @s[hasitem={item=brst:attack_artifact3}] at @s positioned ^^^ run effect @a[r=100] strength 12 3 true
 #mining_artifact
 execute as @a as @s[hasitem={item=brst:mining_artifact1}] at @s positioned ^^^ run effect @a[r=100] haste 12 0 true
 execute as @a as @s[hasitem={item=brst:mining_artifact2}] at @s positioned ^^^ run effect @a[r=100] haste 12 1 true
 execute as @a as @s[hasitem={item=brst:mining_artifact3}] at @s positioned ^^^ run effect @a[r=100] haste 12 2 true
+execute if block -120 -51 -120 brst:luminite_block as @a as @s[hasitem={item=brst:mining_artifact1}] at @s positioned ^^^ run effect @a[r=100] haste 12 1 true
+execute if block -120 -51 -120 brst:luminite_block as @a as @s[hasitem={item=brst:mining_artifact2}] at @s positioned ^^^ run effect @a[r=100] haste 12 2 true
+execute if block -120 -51 -120 brst:luminite_block as @a as @s[hasitem={item=brst:mining_artifact3}] at @s positioned ^^^ run effect @a[r=100] haste 12 3 true
 #shield_artifact
 execute as @a as @s[hasitem={item=brst:shield_artifact1}] at @s positioned ^^^ run effect @a[r=100] resistance 12 0 true
 execute as @a as @s[hasitem={item=brst:shield_artifact2}] at @s positioned ^^^ run effect @a[r=100] resistance 12 1 true
 execute as @a as @s[hasitem={item=brst:shield_artifact3}] at @s positioned ^^^ run effect @a[r=100] resistance 12 2 true
+execute if block -120 -51 -120 brst:luminite_block as @a as @s[hasitem={item=brst:shield_artifact1}] at @s positioned ^^^ run effect @a[r=100] resistance 12 1 true
+execute if block -120 -51 -120 brst:luminite_block as @a as @s[hasitem={item=brst:shield_artifact2}] at @s positioned ^^^ run effect @a[r=100] resistance 12 2 true
+execute if block -120 -51 -120 brst:luminite_block as @a as @s[hasitem={item=brst:shield_artifact3}] at @s positioned ^^^ run effect @a[r=100] resistance 12 3 true
 #speed_artifact
 execute as @a as @s[hasitem={item=brst:speed_artifact1}] at @s positioned ^^^ run effect @a[r=100] speed 12 0 true
 execute as @a as @s[hasitem={item=brst:speed_artifact2}] at @s positioned ^^^ run effect @a[r=100] speed 12 1 true
 execute as @a as @s[hasitem={item=brst:speed_artifact3}] at @s positioned ^^^ run effect @a[r=100] speed 12 2 true
+execute if block -120 -51 -120 brst:luminite_block as @a as @s[hasitem={item=brst:speed_artifact1}] at @s positioned ^^^ run effect @a[r=100] speed 12 1 true
+execute if block -120 -51 -120 brst:luminite_block as @a as @s[hasitem={item=brst:speed_artifact2}] at @s positioned ^^^ run effect @a[r=100] speed 12 2 true
+execute if block -120 -51 -120 brst:luminite_block as @a as @s[hasitem={item=brst:speed_artifact3}] at @s positioned ^^^ run effect @a[r=100] speed 12 3 true

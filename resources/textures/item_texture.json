@@ -88,6 +88,15 @@
       "speed_artifact3" : {
           "textures" : "textures/items/speed_artifact3"
       },
+      "furnace_artifact1" : {
+          "textures" : "textures/items/furnace_artifact1"
+      },
+      "furnace_artifact2" : {
+          "textures" : "textures/items/furnace_artifact2"
+      },
+      "furnace_artifact3" : {
+          "textures" : "textures/items/furnace_artifact3"
+      },
       "torch_artifact" : {
          "textures" : "textures/items/torch_artifact"
       }

@@ -173,7 +173,7 @@ server.world.afterEvents.playerBreakBlock.subscribe(event => {
 
   if (!item) return;
 
-  const originalTools=["brst:stick_pickaxe","brst:heavystone_pickaxe","brst:heavyiron_pickaxe","brst:heavydiamond_pickaxe"];
+  const originalTools=["brst:stick_pickaxe","brst:heavystone_pickaxe","brst:heavyiron_pickaxe","brst:heavydiamond_pickaxe","brst:abyss_pickaxe","brst:luminite_pickaxe","brst:legend_pickaxe"];
 
   if (originalTools.includes(item.typeId)) {
     const durability = item.getComponent("minecraft:durability");

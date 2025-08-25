@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:legend_pickaxe_recipe"
+    },
+    "tags": ["luminite_workbench"],
+    "pattern": [
+      "123",
+      "4G5",
+      "678"
+    ],
+    "key": {
+      "G": { "item": "minecraft:glowstone_dust" },
+      "1": { "item": "minecraft:stone_pickaxe" },
+      "2": { "item": "brst:heavystone_pickaxe" },
+      "3": { "item": "minecraft:iron_pickaxe" },
+      "4": { "item": "brst:heavyiron_pickaxe" },
+      "5": { "item": "minecraft:diamond_pickaxe" },
+      "6": { "item": "brst:heavydiamond_pickaxe" },
+      "7": { "item": "brst:abyss_pickaxe" },
+      "8": { "item": "brst:luminite_pickaxe" }
+    },
+    "result": {
+      "item": "brst:legend_pickaxe",
+      "count": 1
+    }
+  }
+}

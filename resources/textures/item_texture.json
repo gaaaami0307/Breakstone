@@ -19,6 +19,9 @@
       "luminite_pickaxe" : {
          "textures" : "textures/items/luminite_pickaxe"
       },
+      "legend_pickaxe" : {
+         "textures" : "textures/items/legend_pickaxe"
+      },
       "umai_stick_stone" : {
          "textures" : "textures/items/umai_stick_stone"
       },

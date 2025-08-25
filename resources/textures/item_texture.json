@@ -97,6 +97,15 @@
       "furnace_artifact3" : {
           "textures" : "textures/items/furnace_artifact3"
       },
+      "trash_artifact1" : {
+          "textures" : "textures/items/trash_artifact1"
+      },
+      "trash_artifact2" : {
+          "textures" : "textures/items/trash_artifact2"
+      },
+      "trash_artifact3" : {
+          "textures" : "textures/items/trash_artifact3"
+      },
       "torch_artifact" : {
          "textures" : "textures/items/torch_artifact"
       }

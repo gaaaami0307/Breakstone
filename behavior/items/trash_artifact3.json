@@ -1,0 +1,18 @@
+{
+    "format_version": "1.20.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "brst:trash_artifact3",
+            "menu_category": {
+              "category": "equipment"
+            }
+        },
+        "components": {
+            "minecraft:hand_equipped": false,
+            "minecraft:icon":"trash_artifact3",
+            "minecraft:max_stack_size": 1,
+            "minecraft:glint": true,
+            "minecraft:allow_off_hand": true
+        }
+    }
+}

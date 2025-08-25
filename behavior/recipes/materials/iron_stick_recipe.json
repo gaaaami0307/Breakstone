@@ -1,0 +1,22 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:iron_stick_recipe"
+    },
+    "tags": ["diamond_workbench"],
+    "pattern": [
+      " I ",
+      "ISI",
+      " I "
+    ],
+    "key": {
+      "I": { "item": "minecraft:iron_ingot" },
+      "S": { "item": "minecraft:stick" }
+    },
+    "result": {
+      "item": "brst:iron_stick",
+      "count": 1
+    }
+  }
+}

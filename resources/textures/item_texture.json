@@ -22,6 +22,9 @@
       "legend_pickaxe" : {
          "textures" : "textures/items/legend_pickaxe"
       },
+      "genesis_pickaxe" : {
+         "textures" : "textures/items/genesis_pickaxe"
+      },
       "umai_stick_stone" : {
          "textures" : "textures/items/umai_stick_stone"
       },

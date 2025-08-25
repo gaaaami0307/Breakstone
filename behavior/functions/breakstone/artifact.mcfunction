@@ -88,3 +88,24 @@ execute as @a as @s[hasitem={item=brst:furnace_artifact3,location=slot.weapon.of
 execute as @a as @s[hasitem={item=brst:furnace_artifact3,location=slot.weapon.offhand}] as @s[hasitem={item=minecraft:raw_gold}] at @s run xp 4
 execute as @a as @s[hasitem={item=brst:furnace_artifact3,location=slot.weapon.offhand}] as @s[hasitem={item=minecraft:raw_gold}] at @s run give @s minecraft:gold_ingot 1 
 execute as @a as @s[hasitem={item=brst:furnace_artifact3,location=slot.weapon.offhand}] as @s[hasitem={item=minecraft:raw_gold}] at @s run clear @s minecraft:raw_gold 0 1 
+#trash_artifact1
+execute as @a as @s[hasitem={item=brst:trash_artifact1,location=slot.weapon.offhand}] at @s run clear @s minecraft:stone 0 1
+execute as @a as @s[hasitem={item=brst:trash_artifact1,location=slot.weapon.offhand}] at @s run clear @s minecraft:cobblestone 0 1
+execute as @a as @s[hasitem={item=brst:trash_artifact1,location=slot.weapon.offhand}] at @s run clear @s minecraft:blackstone 0 1
+execute as @a as @s[hasitem={item=brst:trash_artifact1,location=slot.weapon.offhand}] at @s run clear @s minecraft:deepslate 0 1
+execute as @a as @s[hasitem={item=brst:trash_artifact1,location=slot.weapon.offhand}] at @s run clear @s minecraft:cobbled_deepslate 0 1
+#trash_artifact2
+execute as @a as @s[hasitem={item=brst:trash_artifact2,location=slot.weapon.offhand}] at @s run clear @s minecraft:stone 0 1
+execute as @a as @s[hasitem={item=brst:trash_artifact2,location=slot.weapon.offhand}] at @s run clear @s minecraft:cobblestone 0 1
+execute as @a as @s[hasitem={item=brst:trash_artifact2,location=slot.weapon.offhand}] at @s run clear @s minecraft:blackstone 0 1
+execute as @a as @s[hasitem={item=brst:trash_artifact2,location=slot.weapon.offhand}] at @s run clear @s minecraft:deepslate 0 1
+execute as @a as @s[hasitem={item=brst:trash_artifact2,location=slot.weapon.offhand}] at @s run clear @s minecraft:cobbled_deepslate 0 1
+execute as @a as @s[hasitem={item=brst:trash_artifact2,location=slot.weapon.offhand}] at @s run clear @s minecraft:obsidian 0 1
+#trash_artifact3
+execute as @a as @s[hasitem={item=brst:trash_artifact3,location=slot.weapon.offhand}] at @s run clear @s minecraft:stone 0 1
+execute as @a as @s[hasitem={item=brst:trash_artifact3,location=slot.weapon.offhand}] at @s run clear @s minecraft:cobblestone 0 1
+execute as @a as @s[hasitem={item=brst:trash_artifact3,location=slot.weapon.offhand}] at @s run clear @s minecraft:blackstone 0 1
+execute as @a as @s[hasitem={item=brst:trash_artifact3,location=slot.weapon.offhand}] at @s run clear @s minecraft:deepslate 0 1
+execute as @a as @s[hasitem={item=brst:trash_artifact3,location=slot.weapon.offhand}] at @s run clear @s minecraft:cobbled_deepslate 0 1
+execute as @a as @s[hasitem={item=brst:trash_artifact3,location=slot.weapon.offhand}] at @s run clear @s minecraft:obsidian 0 1
+execute as @a as @s[hasitem={item=brst:trash_artifact3,location=slot.weapon.offhand}] at @s run clear @s brst:abyss_stone 0 1

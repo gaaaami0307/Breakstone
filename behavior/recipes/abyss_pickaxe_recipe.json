@@ -1,0 +1,22 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:abyss_pickaxe_recipe"
+    },
+    "tags": ["abyss_workbench"],
+    "pattern": [
+      "EEE",
+      " I ",
+      " I "
+    ],
+    "key": {
+      "E": { "item": "minecraft:echo_shard" },
+      "I": { "item": "brst:iron_stick" }
+    },
+    "result": {
+      "item": "brst:abyss_pickaxe",
+      "count": 1
+    }
+  }
+}

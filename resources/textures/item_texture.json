@@ -13,6 +13,9 @@
       "heavydiamond_pickaxe" : {
          "textures" : "textures/items/heavydiamond_pickaxe"
       },
+      "abyss_pickaxe" : {
+         "textures" : "textures/items/abyss_pickaxe"
+      },
       "umai_stick_stone" : {
          "textures" : "textures/items/umai_stick_stone"
       },

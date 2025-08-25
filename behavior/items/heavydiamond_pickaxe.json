@@ -1,0 +1,44 @@
+{
+    "format_version": "1.20.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "brst:heavydiamond_pickaxe",
+            "menu_category": {
+              "category": "equipment",
+              "group": "itemGroup.name.pickaxe",
+              "priority": 3
+            }
+        },
+        "components": {
+            "minecraft:can_destroy_in_creative": false,
+            "minecraft:hand_equipped": true,
+            "minecraft:icon":"heavydiamond_pickaxe",
+            "minecraft:cooldown": {
+                "category": "heavydiamond_pickaxe",
+                "duration": 30
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:damage": 7,
+            "minecraft:durability": {
+              "damage_chance": {
+                "min": 0.5,
+                "max": 1
+              },
+              "max_durability": 2500
+            },
+            "minecraft:enchantable": {
+              "value": 10,
+              "slot": "pickaxe"
+            },
+            "minecraft:digger": {
+              "use_efficiency": true,
+              "destroy_speeds": [
+              { "speed": 30, "block": "brst:abyss_stone" },
+              { "speed": 30, "block": "brst:luminite_ore" },
+              { "speed": 30, "block": "brst:luminite_block" },
+              { "speed": 30, "block": {"tags": "query.any_tag( 'minecraft:is_pickaxe_item_destructible' )" }}
+            ]
+          }
+        }
+    }
+}

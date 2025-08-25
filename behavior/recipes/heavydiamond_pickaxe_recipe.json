@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:heavydiamond_pickaxe_recipe"
+    },
+    "tags": ["diamond_workbench"],
+    "pattern": [
+      "DSD",
+      " I ",
+      " I "
+    ],
+    "key": {
+      "D": { "item": "minecraft:diamond_block" },
+      "S": { "item": "minecraft:sculk" },
+      "I": { "item": "brst:iron_stick" }
+    },
+    "result": {
+      "item": "brst:heavydiamond_pickaxe",
+      "count": 1
+    }
+  }
+}

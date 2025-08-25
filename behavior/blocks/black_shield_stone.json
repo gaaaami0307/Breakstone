@@ -10,7 +10,7 @@
     },
     "components": {
       "minecraft:destructible_by_mining": {
-        "seconds_to_destroy": 100000000
+        "seconds_to_destroy": 999
       },
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 1000

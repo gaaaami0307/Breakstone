@@ -1,0 +1,22 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:luminite_pickaxe_recipe"
+    },
+    "tags": ["abyss_workbench"],
+    "pattern": [
+      "LLL",
+      " E ",
+      " E "
+    ],
+    "key": {
+      "L": { "item": "brst:luminite" },
+      "E": { "item": "minecraft:echo_shard" }
+    },
+    "result": {
+      "item": "brst:luminite_pickaxe",
+      "count": 1
+    }
+  }
+}

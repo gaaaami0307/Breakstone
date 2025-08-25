@@ -1,0 +1,47 @@
+{
+    "format_version": "1.20.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "brst:luminite_pickaxe",
+            "menu_category": {
+              "category": "equipment",
+              "group": "itemGroup.name.pickaxe",
+              "priority": 5
+            }
+        },
+        "components": {
+            "minecraft:can_destroy_in_creative": false,
+            "minecraft:hand_equipped": true,
+            "minecraft:glint": true,
+            "minecraft:icon":"luminite_pickaxe",
+            "minecraft:cooldown": {
+                "category": "luminite_pickaxe",
+                "duration": 30
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:damage": 8,
+            "minecraft:durability": {
+              "damage_chance": {
+                "min": 0.5,
+                "max": 1
+              },
+              "max_durability": 6000
+            },
+            "minecraft:enchantable": {
+              "value": 10,
+              "slot": "pickaxe"
+            },
+            "minecraft:digger": {
+              "use_efficiency": true,
+              "destroy_speeds": [
+              { "speed": 250, "block": "brst:abyss_stone" },
+              { "speed": 250, "block": "brst:black_shield_stone" },
+              { "speed": 250, "block": "brst:luminite_ore" },
+              { "speed": 250, "block": "brst:heavy_stone" },
+              { "speed": 250, "block": "brst:luminite_block" },
+              { "speed": 250, "block": {"tags": "query.any_tag( 'minecraft:is_pickaxe_item_destructible' )" }}
+            ]
+          }
+        }
+    }
+}

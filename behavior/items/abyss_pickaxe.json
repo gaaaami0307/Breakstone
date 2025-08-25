@@ -33,11 +33,11 @@
             "minecraft:digger": {
               "use_efficiency": true,
               "destroy_speeds": [
-              { "speed": 60, "block": "brst:abyss_stone" },
-              { "speed": 60, "block": "brst:luminite_ore" },
-              { "speed": 60, "block": "brst:heavy_stone" },
-              { "speed": 60, "block": "brst:luminite_block" },
-              { "speed": 60, "block": {"tags": "query.any_tag( 'minecraft:is_pickaxe_item_destructible' )" }}
+              { "speed": 100, "block": "brst:abyss_stone" },
+              { "speed": 100, "block": "brst:luminite_ore" },
+              { "speed": 100, "block": "brst:heavy_stone" },
+              { "speed": 100, "block": "brst:luminite_block" },
+              { "speed": 100, "block": {"tags": "query.any_tag( 'minecraft:is_pickaxe_item_destructible' )" }}
             ]
           }
         }

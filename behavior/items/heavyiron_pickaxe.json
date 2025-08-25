@@ -33,13 +33,13 @@
             "minecraft:digger": {
               "use_efficiency": true,
               "destroy_speeds": [
-              { "speed": 15, "block": "minecraft:stone" },
-              { "speed": 15, "block": "minecraft:cobblestone" },
-              { "speed": 15, "block": "brst:heavy_stone" },
-              { "speed": 15, "block": "minecraft:blackstone" },
-              { "speed": 15, "block": "minecraft:deepslate" },
-              { "speed": 15, "block": "minecraft:cobbled_deepslate" },
-              { "speed": 15, "block": "minecraft:obsidian" }
+              { "speed": 20, "block": "minecraft:stone" },
+              { "speed": 20, "block": "minecraft:cobblestone" },
+              { "speed": 20, "block": "brst:heavy_stone" },
+              { "speed": 20, "block": "minecraft:blackstone" },
+              { "speed": 20, "block": "minecraft:deepslate" },
+              { "speed": 20, "block": "minecraft:cobbled_deepslate" },
+              { "speed": 20, "block": "minecraft:obsidian" }
             ]
           }
         }

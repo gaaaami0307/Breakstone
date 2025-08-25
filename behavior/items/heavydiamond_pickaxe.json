@@ -18,7 +18,7 @@
                 "duration": 30
             },
             "minecraft:max_stack_size": 1,
-            "minecraft:damage": 7,
+            "minecraft:damage": 6,
             "minecraft:durability": {
               "damage_chance": {
                 "min": 0.5,
@@ -35,6 +35,7 @@
               "destroy_speeds": [
               { "speed": 30, "block": "brst:abyss_stone" },
               { "speed": 30, "block": "brst:luminite_ore" },
+              { "speed": 30, "block": "brst:heavy_stone" },
               { "speed": 30, "block": "brst:luminite_block" },
               { "speed": 30, "block": {"tags": "query.any_tag( 'minecraft:is_pickaxe_item_destructible' )" }}
             ]

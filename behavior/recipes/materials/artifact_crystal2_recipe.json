@@ -6,9 +6,9 @@
     },
     "tags": ["abyss_workbench"],
     "pattern": [
-      "ESE",
-      "SDS",
-      "ESE"
+      "EDE",
+      "DSD",
+      "EDE"
     ],
     "key": {
       "E": { "item": "minecraft:emerald" },

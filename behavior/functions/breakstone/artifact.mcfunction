@@ -67,3 +67,24 @@ execute as @a as @s[hasitem={item=brst:speed_artifact3}] at @s positioned ^^^ ru
 execute if block -120 -51 -120 brst:luminite_block as @a as @s[hasitem={item=brst:speed_artifact1}] at @s positioned ^^^ run effect @a[r=100] speed 12 1 true
 execute if block -120 -51 -120 brst:luminite_block as @a as @s[hasitem={item=brst:speed_artifact2}] at @s positioned ^^^ run effect @a[r=100] speed 12 2 true
 execute if block -120 -51 -120 brst:luminite_block as @a as @s[hasitem={item=brst:speed_artifact3}] at @s positioned ^^^ run effect @a[r=100] speed 12 3 true
+#furnace_artifact1
+execute as @a as @s[hasitem={item=brst:furnace_artifact1,location=slot.weapon.offhand}] as @s[hasitem={item=minecraft:raw_copper}] at @s run xp 1
+execute as @a as @s[hasitem={item=brst:furnace_artifact1,location=slot.weapon.offhand}] as @s[hasitem={item=minecraft:raw_copper}] at @s run give @s minecraft:copper_ingot 1 
+execute as @a as @s[hasitem={item=brst:furnace_artifact1,location=slot.weapon.offhand}] as @s[hasitem={item=minecraft:raw_copper}] at @s run clear @s minecraft:raw_copper 0 1 
+#furnace_artifact2
+execute as @a as @s[hasitem={item=brst:furnace_artifact2,location=slot.weapon.offhand}] as @s[hasitem={item=minecraft:raw_copper}] at @s run xp 2
+execute as @a as @s[hasitem={item=brst:furnace_artifact2,location=slot.weapon.offhand}] as @s[hasitem={item=minecraft:raw_copper}] at @s run give @s minecraft:copper_ingot 1 
+execute as @a as @s[hasitem={item=brst:furnace_artifact2,location=slot.weapon.offhand}] as @s[hasitem={item=minecraft:raw_copper}] at @s run clear @s minecraft:raw_copper 0 1 
+execute as @a as @s[hasitem={item=brst:furnace_artifact2,location=slot.weapon.offhand}] as @s[hasitem={item=minecraft:raw_iron}] at @s run xp 3
+execute as @a as @s[hasitem={item=brst:furnace_artifact2,location=slot.weapon.offhand}] as @s[hasitem={item=minecraft:raw_iron}] at @s run give @s minecraft:iron_ingot 1 
+execute as @a as @s[hasitem={item=brst:furnace_artifact2,location=slot.weapon.offhand}] as @s[hasitem={item=minecraft:raw_iron}] at @s run clear @s minecraft:raw_iron 0 1 
+#furnace_artifact3
+execute as @a as @s[hasitem={item=brst:furnace_artifact3,location=slot.weapon.offhand}] as @s[hasitem={item=minecraft:raw_copper}] at @s run xp 3
+execute as @a as @s[hasitem={item=brst:furnace_artifact3,location=slot.weapon.offhand}] as @s[hasitem={item=minecraft:raw_copper}] at @s run give @s minecraft:copper_ingot 1 
+execute as @a as @s[hasitem={item=brst:furnace_artifact3,location=slot.weapon.offhand}] as @s[hasitem={item=minecraft:raw_copper}] at @s run clear @s minecraft:raw_copper 0 1 
+execute as @a as @s[hasitem={item=brst:furnace_artifact3,location=slot.weapon.offhand}] as @s[hasitem={item=minecraft:raw_iron}] at @s run xp 4
+execute as @a as @s[hasitem={item=brst:furnace_artifact3,location=slot.weapon.offhand}] as @s[hasitem={item=minecraft:raw_iron}] at @s run give @s minecraft:iron_ingot 1 
+execute as @a as @s[hasitem={item=brst:furnace_artifact3,location=slot.weapon.offhand}] as @s[hasitem={item=minecraft:raw_iron}] at @s run clear @s minecraft:raw_iron 0 1 
+execute as @a as @s[hasitem={item=brst:furnace_artifact3,location=slot.weapon.offhand}] as @s[hasitem={item=minecraft:raw_gold}] at @s run xp 4
+execute as @a as @s[hasitem={item=brst:furnace_artifact3,location=slot.weapon.offhand}] as @s[hasitem={item=minecraft:raw_gold}] at @s run give @s minecraft:gold_ingot 1 
+execute as @a as @s[hasitem={item=brst:furnace_artifact3,location=slot.weapon.offhand}] as @s[hasitem={item=minecraft:raw_gold}] at @s run clear @s minecraft:raw_gold 0 1 

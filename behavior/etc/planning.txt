@@ -59,6 +59,7 @@ block -120 -51 -120 brst:luminite_block
 
 ・研究所
 5004 -61 4994 から 縦横3マス 高さ4マスの structure main_lab
+/structure load main_lab 5004 -61 4994 0_degrees none 
 
 ・実績
 4994 -61 4994 から 縦横3マス 高さ4マスの structure main_achieve

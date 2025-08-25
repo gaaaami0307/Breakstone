@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:furnace_artifact1_recipe"
+    },
+    "tags": ["diamond_workbench"],
+    "pattern": [
+      "SSS",
+      "ScS",
+      "SMS"
+    ],
+    "key": {
+      "M": { "item": "minecraft:coal" },
+      "S": { "tag": "minecraft:stone_crafting_materials" },
+      "c": { "item": "brst:artifact_crystal1" }
+    },
+    "result": {
+      "item": "brst:furnace_artifact1",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:furnace_artifact3_recipe"
+    },
+    "tags": ["luminite_workbench"],
+    "pattern": [
+      "SaS",
+      "ScS",
+      "MMM"
+    ],
+    "key": {
+      "M": { "item": "minecraft:coal_block" },
+      "a": { "item": "brst:furnace_artifact2" },
+      "S": { "item": "brst:heavy_stone" },
+      "c": { "item": "brst:artifact_crystal3" }
+    },
+    "result": {
+      "item": "brst:furnace_artifact3",
+      "count": 1
+    }
+  }
+}

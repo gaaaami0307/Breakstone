@@ -1,0 +1,24 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:furnace_artifact2_recipe"
+    },
+    "tags": ["abyss_workbench"],
+    "pattern": [
+      "SaS",
+      "ScS",
+      "SMS"
+    ],
+    "key": {
+      "M": { "item": "minecraft:coal_block" },
+      "a": { "item": "brst:furnace_artifact1" },
+      "S": { "tag": "minecraft:stone_crafting_materials" },
+      "c": { "item": "brst:artifact_crystal2" }
+    },
+    "result": {
+      "item": "brst:furnace_artifact2",
+      "count": 1
+    }
+  }
+}

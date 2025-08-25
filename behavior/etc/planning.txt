@@ -58,10 +58,10 @@ block -120 -51 -120 brst:luminite_block
 5005 -60 5005 に fac_stick
 
 ・研究所
-5004 -61 4994 から 縦横3マス 高さ4マスの structure
+5004 -61 4994 から 縦横3マス 高さ4マスの structure main_lab
 
 ・実績
-4994 -61 4994 から 縦横3マス 高さ4マスの structure
+4994 -61 4994 から 縦横3マス 高さ4マスの structure main_achieve
 
-・図鑑
-4994 -61 5004 から 縦横3マス 高さ4マスの structure
+・錬金テーブル
+4994 -61 5004 から 縦横3マス 高さ4マスの structure main_alchemy

@@ -1,0 +1,38 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "brst:lab_plate",
+      "menu_category": { 
+        "category": "Items"
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 2
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 2
+      },
+      "minecraft:friction": 0.4,
+      "minecraft:light_emission": 0,
+      "minecraft:light_dampening": 15,
+      "minecraft:loot": "loot_tables/blocks/lab_plate.json",
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": {
+        "up": {
+          "texture": "lab_plate_top",
+          "render_method": "opaque"
+        },
+        "down": {
+          "texture": "lab_plate_bottom",
+          "render_method": "opaque"
+        },
+        "*": {
+          "texture": "lab_plate_side",
+          "render_method": "opaque"
+        }
+      }
+    }
+  }
+}

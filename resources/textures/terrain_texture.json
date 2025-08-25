@@ -67,6 +67,15 @@
     "wood_changer_side": {
       "textures": "textures/blocks/wood_changer_side"
     },
+    "lab_plate_top": {
+      "textures": "textures/blocks/lab_plate_top"
+    },
+    "lab_plate_side": {
+      "textures": "textures/blocks/lab_plate_side"
+    },
+    "lab_plate_bottom": {
+      "textures": "textures/blocks/lab_plate_bottom"
+    },
     "black_shield_stone": {
       "textures": "textures/blocks/black_shield_stone"
     }

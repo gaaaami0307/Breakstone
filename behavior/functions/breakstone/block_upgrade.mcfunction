@@ -42,7 +42,7 @@ execute positioned 5000 -57 5000 if block ~~~ gold_block unless block -120 -55 -
 execute positioned 5000 -57 5000 if block ~~~ gold_block unless block -120 -55 -120 gold_block run setblock -120 -55 -120 minecraft:gold_block
 #ダイアモンドブロック
 execute positioned 5000 -57 5000 if block ~~~ diamond_block unless block -120 -54 -120 diamond_block run tellraw @a { "rawtext": [{"text":"＝＝＝＝＝＝＝＝＝＝＝＝＝\n§6【新しい鉱石ブロックを検知しました】§r"}] }
-execute positioned 5000 -57 5000 if block ~~~ diamond_block unless block -120 -54 -120 diamond_block run tellraw @a { "rawtext": [{"text":"\n§a<ダイアモンドブロック>§r\n\n§c図鑑§rが解放されました。\n＝＝＝＝＝＝＝＝＝＝＝＝＝"}] }
+execute positioned 5000 -57 5000 if block ~~~ diamond_block unless block -120 -54 -120 diamond_block run tellraw @a { "rawtext": [{"text":"\n§a<ダイアモンドブロック>§r\n\n§c錬金テーブル§rが解放されました。\n＝＝＝＝＝＝＝＝＝＝＝＝＝"}] }
 execute positioned 5000 -57 5000 if block ~~~ diamond_block unless block -120 -54 -120 diamond_block run playsound note.bit @a ~~~ 1 1
 execute positioned 5000 -57 5000 if block ~~~ diamond_block unless block -120 -54 -120 diamond_block run particle minecraft:totem_particle ~~~
 execute positioned 5000 -57 5000 if block ~~~ diamond_block unless block -120 -54 -120 diamond_block run setblock -120 -50 -120 minecraft:glass

@@ -1,9 +1,9 @@
 #floor ... 0 = 床三面 1 ~ 5 = 鉱石 6 = 天井
 #床作成
-execute as @e[type=brst:maker] as @s[scores={floor=0}] as @s[scores={death_timer=10..60}] at @s run fill ~~-3~ ~~-2~ minecraft:dirt
-execute as @e[type=brst:maker] as @s[scores={floor=0}] as @s[scores={death_timer=10..60}] at @s run setblock ~~-1~ minecraft:grass_block
+execute as @e[type=brst:maker] as @s[scores={floor=0}] as @s[scores={death_timer=10..60}] at @s run fill ~~-3~ ~~-2~ minecraft:stone
+execute as @e[type=brst:maker] as @s[scores={floor=0}] as @s[scores={death_timer=10..60}] at @s run setblock ~~-1~ minecraft:stone
 execute as @e[type=brst:maker] as @s[scores={floor=0}] as @s[scores={death_timer=61..110}] at @s run fill ~~-3~ ~~-2~ minecraft:deepslate
-execute as @e[type=brst:maker] as @s[scores={floor=0}] as @s[scores={death_timer=61..110}] at @s run setblock ~~-1~ minecraft:polished_andesite
+execute as @e[type=brst:maker] as @s[scores={floor=0}] as @s[scores={death_timer=61..110}] at @s run setblock ~~-1~ minecraft:deepslate
 execute as @e[type=brst:maker] as @s[scores={floor=0}] as @s[scores={death_timer=111..160}] at @s run fill ~~-3~ ~~-2~ minecraft:deepslate_bricks
 execute as @e[type=brst:maker] as @s[scores={floor=0}] as @s[scores={death_timer=111..160}] at @s run setblock ~~-1~ minecraft:deepslate_bricks
 execute as @e[type=brst:maker] as @s[scores={floor=0}] as @s[scores={death_timer=161..210}] at @s run fill ~~-3~ ~~-2~ brst:abyss_stone

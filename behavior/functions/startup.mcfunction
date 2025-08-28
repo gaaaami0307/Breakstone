@@ -18,3 +18,6 @@ scoreboard objectives add floor dummy
 scoreboard objectives add rnd dummy 
 #track
 scoreboard objectives add sneak_time dummy 
+#func
+scoreboard objectives add func_rotate dummy 
+scoreboard objectives add func_move_f dummy 

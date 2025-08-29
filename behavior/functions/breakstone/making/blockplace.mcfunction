@@ -14,6 +14,7 @@ execute as @e[type=brst:maker] as @s[scores={floor=0}] as @s[scores={death_timer
 execute as @e[type=brst:maker] as @s[scores={floor=0}] as @s[scores={death_timer=261..310}] at @s run setblock ~~-1~ minecraft:bedrock
 #天井
 execute as @e[type=brst:maker] as @s[scores={floor=6}] as @s[scores={death_timer=10..}] at @s run setblock ~~~ minecraft:bedrock
+execute as @e[type=brst:maker] as @s[scores={floor=6}] as @s[scores={death_timer=10..}] at @s run setblock ~~1~ minecraft:bedrock
 #生成
 execute as @e[type=brst:maker] as @s[scores={floor=1..5}] at @s run scoreboard players random @s rnd 1 10000
 #

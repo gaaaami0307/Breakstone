@@ -37,5 +37,12 @@ execute as @e[type=brst:hole] as @s[scores={rnd=76..90}] at @s run scoreboard pl
 execute as @e[type=brst:hole] as @s[scores={rnd=91..97}] at @s run scoreboard players set @s chain 5
 execute as @e[type=brst:hole] as @s[scores={rnd=98..99}] at @s run scoreboard players set @s chain 6
 execute as @e[type=brst:hole] as @s[scores={rnd=100}] at @s run scoreboard players set @s chain 7
+execute as @e[type=brst:hole] as @s at @s run scoreboard players random @s rnd 1 100
+execute as @e[type=brst:hole] as @s[scores={death_timer=30..59}] as @s[scores={rnd=1..50}] as @s[scores={type=1..3}] at @s run scoreboard players set @s type 10
+execute as @e[type=brst:hole] as @s[scores={death_timer=60..109}] as @s[scores={rnd=1..20}] as @s[scores={type=1..3}] at @s run scoreboard players set @s type 10
+execute as @e[type=brst:hole] as @s[scores={death_timer=110..159}] as @s[scores={rnd=1..15}] as @s[scores={type=1..3}] at @s run scoreboard players set @s type 10
+execute as @e[type=brst:hole] as @s[scores={death_timer=160..209}] as @s[scores={rnd=1..10}] as @s[scores={type=1..3}] at @s run scoreboard players set @s type 10
+execute as @e[type=brst:hole] as @s[scores={death_timer=210..}] as @s[scores={rnd=1..7}] as @s[scores={type=1..3}] at @s run scoreboard players set @s type 10
+execute as @e[type=brst:hole] as @s[scores={type=10}] at @s run scoreboard players set @s chain 1
 execute as @e[type=brst:hole] as @s at @s run function breakstone/making/hole/make
 execute as @e[type=brst:hole] as @s at @s run tag @s remove setup

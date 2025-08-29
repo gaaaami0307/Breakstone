@@ -50,3 +50,25 @@ execute as @e[type=brst:hole] as @s[scores={type=8}] at @s run fill ~-2 -61 ~-2 
 execute as @e[type=brst:hole] as @s[scores={type=9}] at @s run fill ~-3 -54 ~-3 ~3 -54 ~3 minecraft:red_concrete
 execute as @e[type=brst:hole] as @s[scores={type=9}] at @s run fill ~-3 -57 ~-3 ~3 -60 ~3 minecraft:air
 execute as @e[type=brst:hole] as @s[scores={type=9}] at @s run fill ~-3 -61 ~-3 ~3 -63 ~3 minecraft:lava
+#
+execute as @e[type=brst:hole] as @s[scores={type=10}] at @s run fill ~-3 -54 ~-3 ~3 -54 ~3 minecraft:purple_concrete
+execute as @e[type=brst:hole] as @s[scores={type=10}] at @s run scoreboard players random @s rnd 1 3
+execute as @e[type=brst:hole] as @s[scores={type=10}] as @s[scores={death_timer=30..59}] as @s[scores={rnd=1}] at @s run structure load st11 ~ -61 ~ 0_degrees none 
+execute as @e[type=brst:hole] as @s[scores={type=10}] as @s[scores={death_timer=30..59}] as @s[scores={rnd=2}] at @s run structure load st12 ~ -61 ~ 0_degrees none 
+execute as @e[type=brst:hole] as @s[scores={type=10}] as @s[scores={death_timer=30..59}] as @s[scores={rnd=3}] at @s run structure load st13 ~ -61 ~ 0_degrees none 
+#
+execute as @e[type=brst:hole] as @s[scores={type=10}] as @s[scores={death_timer=60..109}] as @s[scores={rnd=1}] at @s run structure load st21 ~ -61 ~ 0_degrees none 
+execute as @e[type=brst:hole] as @s[scores={type=10}] as @s[scores={death_timer=60..109}] as @s[scores={rnd=2}] at @s run structure load st22 ~ -61 ~ 0_degrees none 
+execute as @e[type=brst:hole] as @s[scores={type=10}] as @s[scores={death_timer=60..109}] as @s[scores={rnd=3}] at @s run structure load st23 ~ -61 ~ 0_degrees none 
+#
+execute as @e[type=brst:hole] as @s[scores={type=10}] as @s[scores={death_timer=110..159}] as @s[scores={rnd=1}] at @s run structure load st31 ~ -61 ~ 0_degrees none 
+execute as @e[type=brst:hole] as @s[scores={type=10}] as @s[scores={death_timer=110..159}] as @s[scores={rnd=2}] at @s run structure load st32 ~ -61 ~ 0_degrees none 
+execute as @e[type=brst:hole] as @s[scores={type=10}] as @s[scores={death_timer=110..159}] as @s[scores={rnd=3}] at @s run structure load st33 ~ -61 ~ 0_degrees none 
+#
+execute as @e[type=brst:hole] as @s[scores={type=10}] as @s[scores={death_timer=160..209}] as @s[scores={rnd=1}] at @s run structure load st41 ~ -61 ~ 0_degrees none 
+execute as @e[type=brst:hole] as @s[scores={type=10}] as @s[scores={death_timer=160..209}] as @s[scores={rnd=2}] at @s run structure load st42 ~ -61 ~ 0_degrees none 
+execute as @e[type=brst:hole] as @s[scores={type=10}] as @s[scores={death_timer=160..209}] as @s[scores={rnd=3}] at @s run structure load st43 ~ -61 ~ 0_degrees none 
+#
+execute as @e[type=brst:hole] as @s[scores={type=10}] as @s[scores={death_timer=210..}] as @s[scores={rnd=1}] at @s run structure load st51 ~ -61 ~ 0_degrees none 
+execute as @e[type=brst:hole] as @s[scores={type=10}] as @s[scores={death_timer=210..}] as @s[scores={rnd=2}] at @s run structure load st52 ~ -61 ~ 0_degrees none 
+execute as @e[type=brst:hole] as @s[scores={type=10}] as @s[scores={death_timer=210..}] as @s[scores={rnd=3}] at @s run structure load st53 ~ -61 ~ 0_degrees none 

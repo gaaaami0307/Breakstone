@@ -19,7 +19,7 @@
           "max": "hard"
         },
         "minecraft:weight": {
-          "default": 30
+          "default": 100
         },
         "minecraft:herd": {
           "min_size": 2,
@@ -34,6 +34,8 @@
             "entity_type": "minecraft:zombie_villager_v2"
           }
         ],
+        "minecraft:spawns_on_block_filter": ["minecraft:stone","minecraft:deepslate"],
+
         "minecraft:biome_filter": {
           "test": "has_biome_tag", "operator": "==", "value": "monster"
         }

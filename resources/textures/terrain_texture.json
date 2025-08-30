@@ -34,6 +34,15 @@
     "copper_workbench_bottom": {
       "textures": "textures/blocks/copper_workbench_bottom"
     },
+    "magic_workbench_top": {
+      "textures": "textures/blocks/magic_workbench_top"
+    },
+    "magic_workbench_side": {
+      "textures": "textures/blocks/magic_workbench_side"
+    },
+    "none": {
+      "textures": "textures/blocks/none"
+    },
     "diamond_workbench_top": {
       "textures": "textures/blocks/diamond_workbench_top"
     },

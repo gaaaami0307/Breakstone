@@ -1,0 +1,22 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:lab_plate_recipe"
+    },
+    "tags": ["diamond_workbench"],
+    "pattern": [
+      "IGI",
+      "III",
+      "III"
+    ],
+    "key": {
+      "I": { "item": "minecraft:iron_ingot" },
+      "G": { "item": "minecraft:gold_nugget" }
+    },
+    "result": {
+      "item": "brst:lab_plate",
+      "count": 1
+    }
+  }
+}

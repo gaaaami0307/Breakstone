@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:magic_workbench_recipe"
+    },
+    "tags": ["abyss_workbench"],
+    "pattern": [
+      "DGD",
+      "GEG",
+      "DGD"
+    ],
+    "key": {
+      "E": { "item": "minecraft:echo_shard" },
+      "D": { "item": "minecraft:diamond" },
+      "G": { "item": "minecraft:gold_ingot" }
+    },
+    "result": {
+      "item": "brst:magic_workbench",
+      "count": 1
+    }
+  }
+}

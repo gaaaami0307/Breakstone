@@ -1,0 +1,22 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:mob_soul_recipe"
+    },
+    "tags": ["magic"],
+    "pattern": [
+      " L ",
+      "LCL",
+      " L "
+    ],
+    "key": {
+      "L": { "item": "minecraft:lapis_block" },
+      "C": { "item": "minecraft:coal_block" }
+    },
+    "result": {
+      "item": "brst:mob_soul",
+      "count": 1
+    }
+  }
+}

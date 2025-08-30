@@ -34,6 +34,9 @@
       "luminite" : {
          "textures" : "textures/items/luminite"
       },
+      "mob_soul" : {
+         "textures" : "textures/items/mob_soul"
+      },
       "artifact_crystal1" : {
          "textures" : "textures/items/artifact_crystal1"
       },

@@ -42,7 +42,7 @@ execute as @e[type=brst:hole] as @s[scores={death_timer=30..59}] as @s[scores={r
 execute as @e[type=brst:hole] as @s[scores={death_timer=60..109}] as @s[scores={rnd=1..20}] as @s[scores={type=1..3}] at @s run scoreboard players set @s type 10
 execute as @e[type=brst:hole] as @s[scores={death_timer=110..159}] as @s[scores={rnd=1..15}] as @s[scores={type=1..3}] at @s run scoreboard players set @s type 10
 execute as @e[type=brst:hole] as @s[scores={death_timer=160..209}] as @s[scores={rnd=1..10}] as @s[scores={type=1..3}] at @s run scoreboard players set @s type 10
-execute as @e[type=brst:hole] as @s[scores={death_timer=210..}] as @s[scores={rnd=1..7}] as @s[scores={type=1..3}] at @s run scoreboard players set @s type 10
+execute as @e[type=brst:hole] as @s[scores={death_timer=210..}] as @s[scores={rnd=1..25}] as @s[scores={type=1..3}] at @s run scoreboard players set @s type 10
 execute as @e[type=brst:hole] as @s[scores={type=10}] at @s run scoreboard players set @s chain 1
 execute as @e[type=brst:hole] as @s at @s run function breakstone/making/hole/make
 execute as @e[type=brst:hole] as @s at @s run tag @s remove setup

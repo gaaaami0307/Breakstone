@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "brst:seeds_2_recipe"
+    },
+
+    
+    "tags": [ "magic" ],
+    "ingredients": [
+      {
+        "item": "minecraft:wheat_seeds"
+      },
+      {
+        "item": "minecraft:quartz"
+      }
+    ],
+    "result": {
+      "item": "minecraft:white_wool",
+      "count": 1
+    }
+  }
+}

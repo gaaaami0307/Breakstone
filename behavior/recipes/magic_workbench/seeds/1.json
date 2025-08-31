@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "brst:seeds_1_recipe"
+    },
+
+    
+    "tags": [ "magic" ],
+    "ingredients": [
+      {
+        "item": "minecraft:wheat_seeds"
+      },
+      {
+        "item": "minecraft:copper_ingot"
+      }
+    ],
+    "result": {
+      "item": "minecraft:leather",
+      "count": 1
+    }
+  }
+}

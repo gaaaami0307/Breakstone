@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "brst:seeds_7_recipe"
+    },
+
+    
+    "tags": [ "magic" ],
+    "ingredients": [
+      {
+        "item": "minecraft:wheat_seeds"
+      },
+      {
+        "item": "minecraft:emerald"
+      }
+    ],
+    "result": {
+      "item": "minecraft:sugar_cane",
+      "count": 1
+    }
+  }
+}

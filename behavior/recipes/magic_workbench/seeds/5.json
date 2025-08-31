@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "brst:seeds_5_recipe"
+    },
+
+    
+    "tags": [ "magic" ],
+    "ingredients": [
+      {
+        "item": "minecraft:wheat_seeds"
+      },
+      {
+        "item": "minecraft:gold_ingot"
+      }
+    ],
+    "result": {
+      "item": "minecraft:pumpkin_seeds",
+      "count": 1
+    }
+  }
+}

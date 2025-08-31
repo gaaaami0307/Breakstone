@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:vindicator_egg_recipe"
+    },
+    "tags": ["magic"],
+    "pattern": [
+      "OMO",
+      "MSM",
+      "OMO"
+    ],
+    "key": {
+      "S": { "item": "brst:mob_soul" },
+      "O": { "item": "brst:luminite_block" },
+      "M": { "item": "minecraft:iron_axe" }
+    },
+    "result": {
+      "item": "minecraft:vindicator_spawn_egg",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:cave_spider_egg_recipe"
+    },
+    "tags": ["magic"],
+    "pattern": [
+      "OMO",
+      "MSM",
+      "OMO"
+    ],
+    "key": {
+      "S": { "item": "brst:mob_soul" },
+      "O": { "item": "minecraft:diamond" },
+      "M": { "item": "minecraft:spider_eye"}
+    },
+    "result": {
+      "item": "minecraft:cave_spider_spawn_egg",
+      "count": 1
+    }
+  }
+}

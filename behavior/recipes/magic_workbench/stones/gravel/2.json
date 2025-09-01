@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "brst:stones_gravel_2_recipe"
+    },
+
+    
+    "tags": [ "magic" ],
+    "ingredients": [
+      {
+        "item": "minecraft:gravel"
+      },
+      {
+        "item": "minecraft:iron_nugget"
+      }
+    ],
+    "result": {
+      "item": "minecraft:snow",
+      "count": 1
+    }
+  }
+}

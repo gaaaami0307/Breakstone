@@ -34,6 +34,9 @@
       "luminite" : {
          "textures" : "textures/items/luminite"
       },
+      "gear" : {
+         "textures" : "textures/items/gear"
+      },
       "mob_soul" : {
          "textures" : "textures/items/mob_soul"
       },

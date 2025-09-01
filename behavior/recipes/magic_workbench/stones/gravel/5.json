@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "brst:stones_gravel_5_recipe"
+    },
+
+    
+    "tags": [ "magic" ],
+    "ingredients": [
+      {
+        "item": "minecraft:gravel"
+      },
+      {
+        "item": "minecraft:sculk"
+      }
+    ],
+    "result": {
+      "item": "minecraft:soul_sand",
+      "count": 1
+    }
+  }
+}

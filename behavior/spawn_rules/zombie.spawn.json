@@ -27,10 +27,10 @@
         },
         "minecraft:permute_type": [
           {
-            "weight": 95
+            "weight": 80
           },
           {
-            "weight": 5,
+            "weight": 20,
             "entity_type": "minecraft:zombie_villager_v2"
           }
         ],

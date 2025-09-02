@@ -34,6 +34,15 @@
     "copper_workbench_bottom": {
       "textures": "textures/blocks/copper_workbench_bottom"
     },
+    "mecha_workbench_top": {
+      "textures": "textures/blocks/mecha_workbench_top"
+    },
+    "mecha_workbench_side": {
+      "textures": "textures/blocks/mecha_workbench_side"
+    },
+    "mecha_workbench_bottom": {
+      "textures": "textures/blocks/mecha_workbench_bottom"
+    },
     "magic_workbench_top": {
       "textures": "textures/blocks/magic_workbench_top"
     },

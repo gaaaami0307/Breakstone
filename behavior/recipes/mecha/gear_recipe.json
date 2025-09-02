@@ -4,7 +4,7 @@
     "description": {
       "identifier": "brst:gear_recipe"
     },
-    "tags": ["diamond_workbench"],
+    "tags": ["mecha"],
     "pattern": [
       "iIi",
       "III",

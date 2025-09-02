@@ -1,0 +1,22 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:spanner_recipe"
+    },
+    "tags": ["mecha"],
+    "pattern": [
+      " IS",
+      "ISI",
+      "SI "
+    ],
+    "key": {
+      "I": { "item": "minecraft:iron_ingot" },
+      "S": { "item": "brst:iron_stick" }
+    },
+    "result": {
+      "item": "brst:spanner",
+      "count": 1
+    }
+  }
+}

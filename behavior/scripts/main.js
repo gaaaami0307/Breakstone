@@ -3,6 +3,8 @@ import { ModalFormData } from "@minecraft/server-ui";
 
 //----------------------------------------------------function
 
+
+// Fac_attackの調整
 function settingOfFacAttack(player){
 
   player.runCommandAsync("tag @s remove setting_attack");
@@ -29,6 +31,12 @@ function settingOfFacAttack(player){
 
 }
 
+function spannerUse(ev){
+  const player = ev.source;
+  player.runCommandAsync("execute if entity @e[type=brst:fac_attack,r=5,c=1] run tag @s add setting_attack");
+  player.runCommandAsync("execute at @e[type=brst:fac_attack,r=5,c=1] run particle minecraft:totem_particle ~~0.5~");
+}
+
 //----------------------------------------------------Script
 
 const weapons=[
@@ -37,10 +45,8 @@ const weapons=[
 //ここにスクリプトを記述
 server.world.afterEvents.itemUse.subscribe(ev => {
     let item = ev.itemStack.typeId;
-    for (const weapon of weapons){
-        if(item == weapon.ID){
-            weapon.skill(ev);
-        }
+    if(item == "brst:spanner"){
+      spannerUse(ev);
     }
 })
 

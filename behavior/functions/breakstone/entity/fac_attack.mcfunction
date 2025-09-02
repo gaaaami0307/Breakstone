@@ -2,6 +2,7 @@
 #arg2=ダメージ
 execute as @e[type=brst:fac_attack,tag=!setup] at @s run scoreboard players set @s arg1 200
 execute as @e[type=brst:fac_attack,tag=!setup] at @s run scoreboard players set @s arg2 6
+execute as @e[type=brst:fac_attack,tag=!setup] at @s run tag @s add can_spanner
 execute as @e[type=brst:fac_attack,tag=!setup] at @s run tag @s add setup
 execute as @e[type=brst:fac_attack] at @s run scoreboard players add @s death_timer 1
 execute as @e[type=brst:fac_attack] at @s if entity @a[r=50] run particle brst:attack ~~0.5~

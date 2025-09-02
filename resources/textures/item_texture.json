@@ -37,6 +37,9 @@
       "gear" : {
          "textures" : "textures/items/gear"
       },
+      "spanner" : {
+         "textures" : "textures/items/spanner"
+      },
       "mecha_correct" : {
          "textures" : "textures/items/mecha_correct"
       },

@@ -1,101 +1,32 @@
 import * as server from '@minecraft/server';
+import { ModalFormData } from "@minecraft/server-ui";
 
-//Example
-class Example{
-    cooldown = [0,0]
-    mp=[0,0];
-    SID = "weapon_checker";
-    ID="rouge:"+this.SID;
-    Name="ウェポンチェッカー";
-    Rank=RankList[3];
-    weapon=false;
+//----------------------------------------------------function
 
-    lore_item="武器の性能を確認できるという異質な武器。\nこの武器の所持・使用には所持制限は適用されない。";
-    lore_skillname="性能確認";
-    lore_skilluse="オフハンドに武器を持って右クリック";
-    lore_skilllim="なし";
-    lore_skillinfo="オフハンドに持った武器の性能をチェックする。\n\nてか、このテキストを見てる時点でわかってるじゃないか！";
-    lore_skillname2="";
-    lore_skilluse2="";
-    lore_skilllim2="";
-    lore_skillinfo2="";
+function settingOfFacAttack(player){
 
-    constructor(brand){
-        this.brand=brand;
-        this.lore="";
-        this.lore=this.Rank+"§r Rank 【"+this.Name+"§r】\n"+this.lore_item;
-        if(this.lore_skillname!="") this.lore+="\n\nスキル【"+this.lore_skillname+"§r】(§e"+this.lore_skilluse+"§r)\n使用条件:*"+this.lore_skilllim+"*\n"+this.lore_skillinfo;
-        if(this.lore_skillname2!="") this.lore+="\n\nスキル【"+this.lore_skillname2+"§r】(§e"+this.lore_skilluse2+"§r)\n使用条件:*"+this.lore_skilllim2+"*\n"+this.lore_skillinfo2;
+  player.runCommandAsync("tag @s remove setting_attack");
+
+  const form = new ModalFormData()
+  .title("自動攻撃装置の設定")
+  .slider("攻撃周期(秒)", 1, 30, 1, 10)
+  .slider("ダメージ(ハート)", 1, 10, 1, 3)
+  .toggle("効果音", false);
+
+  form.show(player).then(res=>{
+    if(!res.canceled){
+      player.runCommandAsync("execute unless entity @e[type=brst:fac_attack,r=5] run tellraw @s { \"rawtext\": [{\"text\":\"§c設定に失敗しました\"}] }");
+      player.runCommandAsync("execute as @e[type=brst:fac_attack,r=5,c=1] at @s run scoreboard players set @s arg1 " + Math.floor(res.formValues[0] * 20));
+      player.runCommandAsync("execute as @e[type=brst:fac_attack,r=5,c=1] at @s run scoreboard players set @s arg2 " + Math.floor(res.formValues[1] * 2));
+      player.runCommandAsync("execute as @e[type=brst:fac_attack,r=5,c=1] at @s run particle minecraft:totem_particle ~~0.5~");
+      player.runCommandAsync("execute as @e[type=brst:fac_attack,r=5,c=1] at @s run playsound random.orb @a ~~~ 1 1");
+      player.runCommandAsync("execute if entity @e[type=brst:fac_attack,r=5,c=1] run tellraw @s { \"rawtext\": [{\"text\":\"§a設定しました！\"}] }");
+
+      if(res.formValues[2]) player.runCommandAsync("execute as @e[type=brst:fac_attack,r=5,c=1] at @s run tag @s add sound");
+      else player.runCommandAsync("execute as @e[type=brst:fac_attack,r=5,c=1] at @s run tag @s remove sound");
     }
+  })
 
-    skill(ev){
-        const pl = ev.source;
-        //武器所持数制限
-        if(pl.hasTag("limit_has_weapons")==false||!this.weapon){
-            //クールダウン
-            if(pl.getItemCooldown(this.SID)==0){
-                if(pl.isOnGround){ 
-                    if(pl.isSprinting){
-                        if(pl.isSneaking){ //地上ダッシュスニーク
-                            this.skill1(ev);
-                        }else{ //地上ダッシュ立ち
-                            this.skill1(ev);
-                        }
-                    }else{
-                        if(pl.isSneaking){ //地上歩きスニーク
-                            this.skill1(ev);
-                        }else{ //地上歩き立ち
-                            this.skill1(ev);
-                        }
-                    }
-                }else{
-                    if(pl.isSprinting){
-                        if(pl.isSneaking){ //空中ダッシュスニーク
-                            this.skill1(ev);
-                        }else{ //空中ダッシュ立ち
-                            this.skill1(ev);
-                        }
-                    }else{
-                        if(pl.isSneaking){ //空中歩きスニーク
-                            this.skill1(ev);
-                        }else{ //空中歩き立ち
-                            this.skill1(ev);
-                        }
-                    }
-                }
-            }
-        }else{
-            limit_weapon_msg(pl,this.SID);
-        }
-    }
-
-    skill1(ev){
-        const pl = ev.source;
-        //mp制限
-        if(pl.addLevels(0)>=this.mp[0]){
-            pl.runCommandAsync("execute as @s at @s run function item/"+this.SID+"1");
-            pl.startItemCooldown(this.SID,this.cooldown[0]*20);
-            pl.addLevels(-this.mp[0]);
-        }
-        else{
-            lack_mp_msg(pl,this.SID);
-        }
-
-    }
-
-    skill2(ev){
-        const pl = ev.source;
-        //mp制限
-        if(pl.addLevels(0)>=this.mp[1]){
-            pl.runCommandAsync("execute as @s at @s run function item/"+this.SID+"2");
-            pl.startItemCooldown(this.SID,this.cooldown[1]*20);
-            pl.addLevels(-this.mp[1]);
-        }
-        else{
-            lack_mp_msg(pl,this.SID);
-        }
-
-    }
 }
 
 //----------------------------------------------------Script
@@ -128,6 +59,12 @@ server.system.runInterval(ev => {
       }else{
         player.runCommandAsync("scoreboard players set @s sneak_time 0")
       }
+
+    //-------------タグ処理
+
+    if (player.hasTag("setting_attack")) settingOfFacAttack(player);
+
+
    }
 
    //---------------------

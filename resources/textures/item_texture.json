@@ -37,6 +37,9 @@
       "gear" : {
          "textures" : "textures/items/gear"
       },
+      "mecha_correct" : {
+         "textures" : "textures/items/mecha_correct"
+      },
       "mob_soul" : {
          "textures" : "textures/items/mob_soul"
       },

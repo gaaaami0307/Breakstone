@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:mecha_correct_recipe"
+    },
+    "tags": ["mecha"],
+    "pattern": [
+      " C ",
+      "GRG",
+      " G "
+    ],
+    "key": {
+      "C": { "item": "minecraft:chest" },
+      "G": { "item": "brst:gear" },
+      "R": { "item": "minecraft:redstone_block" }
+    },
+    "result": {
+      "item": "brst:mecha_correct",
+      "count": 1
+    }
+  }
+}

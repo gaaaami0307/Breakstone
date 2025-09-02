@@ -1,0 +1,51 @@
+{
+    "format_version": "1.20.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "brst:fac_attack",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "animations": {
+                
+            },
+            "scripts": {
+                
+            },
+            "triggers": {
+              "minecraft:entity_spawned": { "event": "brst:debug_death" }
+            }
+        },
+        "components": {       
+            "minecraft:collision_box": {
+                "width": 1,
+                "height": 1
+            },
+            "minecraft:loot": {
+              "table" : "loot_tables/entities/fac_attack.json"
+            },
+            "minecraft:health": {
+                "value": 1,
+                "max": 1,
+                "on_death": {
+                  "event": "brst:debug_death"
+                }
+            },
+            "minecraft:knockback_resistance": {
+                "value": 0.9
+            },
+            "minecraft:physics": {
+                "has_gravity": false
+            },
+            "minecraft:pushable": {
+            "is_pushable": false,
+            "is_pushable_by_piston": false
+            },
+            "minecraft:nameable": {}
+        },
+        "events": {
+          "brst:debug_death": {
+            "play_sound": { "sound": "random.levelup" }
+          }
+        }
+    }
+}

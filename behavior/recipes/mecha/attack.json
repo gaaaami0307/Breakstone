@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:mecha_attack_recipe"
+    },
+    "tags": ["mecha"],
+    "pattern": [
+      " C ",
+      "GRG",
+      " C "
+    ],
+    "key": {
+      "C": { "item": "minecraft:iron_sword" },
+      "G": { "item": "brst:gear" },
+      "R": { "item": "minecraft:redstone_block" }
+    },
+    "result": {
+      "item": "brst:mecha_attack",
+      "count": 1
+    }
+  }
+}

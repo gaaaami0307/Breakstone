@@ -40,6 +40,9 @@
       "mecha_correct" : {
          "textures" : "textures/items/mecha_correct"
       },
+      "mecha_attack" : {
+         "textures" : "textures/items/mecha_attack"
+      },
       "mob_soul" : {
          "textures" : "textures/items/mob_soul"
       },

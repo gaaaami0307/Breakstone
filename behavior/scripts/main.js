@@ -135,7 +135,7 @@ server.system.runInterval(ev => {
 
    const entities=[];
 
-   const breakstoneentities=["maker","fac_stick","hole","fac_correct"];
+   const breakstoneentities=["maker","fac_stick","hole","fac_correct","fac_attack"];
 
    const breakstonefunctions=["block_upgrade","upgrade_behavior","artifact"];
 

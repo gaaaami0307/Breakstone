@@ -28,6 +28,21 @@
       "umai_stick_stone" : {
          "textures" : "textures/items/umai_stick_stone"
       },
+      "umai_stick_gold" : {
+         "textures" : "textures/items/umai_stick_gold"
+      },
+      "umai_stick_emerald" : {
+         "textures" : "textures/items/umai_stick_emerald"
+      },
+      "umai_stick_ice" : {
+         "textures" : "textures/items/umai_stick_ice"
+      },
+      "cola" : {
+         "textures" : "textures/items/cola"
+      },
+      "chocolate" : {
+         "textures" : "textures/items/chocolate"
+      },
       "iron_stick" : {
          "textures" : "textures/items/iron_stick"
       },

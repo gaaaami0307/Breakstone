@@ -1,0 +1,21 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:chocolate_recipe"
+    },
+    "tags": ["diamond_workbench"],
+    "pattern": [
+      " C",
+      "I "
+    ],
+    "key": {
+      "I": { "item": "minecraft:iron_nugget"},
+      "C": { "item": "minecraft:cocoa_beans" }
+    },
+    "result": {
+      "item": "brst:chocolate",
+      "count": 1
+    }
+  }
+}

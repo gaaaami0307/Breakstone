@@ -13,7 +13,8 @@
         "count": 3
       },
       {
-        "item": "minecraft:potion"
+        "item": "minecraft:potion",
+        "data": 0
       }
     ],
     "result": {

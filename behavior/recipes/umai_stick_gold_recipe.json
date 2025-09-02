@@ -1,0 +1,21 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:umai_stick_gold_recipe"
+    },
+    "tags": ["copper_workbench"],
+    "pattern": [
+      "II",
+      "IG"
+    ],
+    "key": {
+      "G": { "item": "minecraft:gold_nugget" },
+      "I": { "item": "minecraft:stick" }
+    },
+    "result": {
+      "item": "brst:umai_stick_gold",
+      "count": 3
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "brst:candy_recipe"
+    },
+
+    
+    "tags": [ "luminite_workbench" ],
+    "ingredients": [
+      {
+        "item": "minecraft:stick"
+      },
+      {
+        "item": "minecraft:sugar",
+        "count": 2
+      },
+      {
+        "item": "brst:luminite",
+        "count": 3
+      }
+    ],
+    "result": {
+      "item": "brst:candy",
+      "count": 1
+    }
+  }
+}

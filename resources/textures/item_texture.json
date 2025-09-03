@@ -43,6 +43,12 @@
       "chocolate" : {
          "textures" : "textures/items/chocolate"
       },
+      "chocomint" : {
+         "textures" : "textures/items/chocomint"
+      },
+      "candy" : {
+         "textures" : "textures/items/candy"
+      },
       "iron_stick" : {
          "textures" : "textures/items/iron_stick"
       },

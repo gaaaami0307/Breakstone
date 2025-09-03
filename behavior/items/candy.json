@@ -10,7 +10,7 @@
         "components": {
             "minecraft:hand_equipped": false,
             "minecraft:icon":"candy",
-            "minecraft:max_stack_size": 3,
+            "minecraft:max_stack_size": 1,
             "minecraft:glint": false,
             "minecraft:use_animation": "eat",
             "minecraft:food": {

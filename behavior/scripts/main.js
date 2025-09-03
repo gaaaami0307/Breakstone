@@ -39,10 +39,7 @@ function spannerUse(ev){
 
 //----------------------------------------------------Script
 
-const weapons=[
-];
-
-//ここにスクリプトを記述
+//アイテム使用
 server.world.afterEvents.itemUse.subscribe(ev => {
     let item = ev.itemStack.typeId;
     if(item == "brst:spanner"){
@@ -50,9 +47,14 @@ server.world.afterEvents.itemUse.subscribe(ev => {
     }
 })
 
-let display_name;
-let display_rank;
-let display_cooldown;
+//食す
+server.world.afterEvents.itemCompleteUse.subscribe(ev =>{
+    let item = ev.itemStack.typeId;
+    let player = ev.source;
+    if(item == "brst:candy"){
+      player.runCommandAsync("effect @s regeneration 5 3");
+    }
+})
 
 server.system.runInterval(ev => {
 

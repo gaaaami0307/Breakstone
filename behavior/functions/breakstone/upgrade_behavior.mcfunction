@@ -62,4 +62,4 @@ execute as @a as @s[tag=make_genesis] at @s run clear @s brst:stick_pickaxe 0 1
 execute as @a as @s[tag=make_genesis] at @s run give @s brst:genesis_pickaxe 1
 execute as @a as @s[tag=make_genesis] at @s run tag @s remove make_genesis
 #spanner
-execute as @a as @s[hasitem={item=brst:spanner,location=slot.weapon.mainhand}] at @s as @e[c=1,r=5,tag=can_spanner] at @s run particle minecraft:villager_happy ~~0.5~
+execute as @a as @s[hasitem={item=brst:spanner,location=slot.weapon.mainhand}] at @s as @e[c=1,r=5,tag=can_spanner] at @s run particle minecraft:electric_spark_particle ~~0.8~

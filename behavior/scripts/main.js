@@ -3,7 +3,6 @@ import { ModalFormData } from "@minecraft/server-ui";
 
 //----------------------------------------------------function
 
-
 // Fac_attackの調整
 function settingOfFacAttack(player){
 
@@ -13,7 +12,7 @@ function settingOfFacAttack(player){
   .title("自動攻撃装置の設定")
   .slider("攻撃周期(秒)", 1, 30, 1, 10)
   .slider("ダメージ(ハート)", 1, 10, 1, 3)
-  .toggle("効果音", false);
+  .toggle("効果音", true);
 
   form.show(player).then(res=>{
     if(!res.canceled){
@@ -31,10 +30,40 @@ function settingOfFacAttack(player){
 
 }
 
+// Fac_correctの調整
+function settingOfFacCorrect(player){
+
+  player.runCommandAsync("tag @s remove setting_correct");
+
+  const form = new ModalFormData()
+  .title("アイテム収集装置の設定")
+  .slider("起動周期(秒)", 1, 30, 1, 10)
+  .slider("収集範囲(半径)", 5, 30, 5, 10)
+  .toggle("効果音", true);
+
+  form.show(player).then(res=>{
+    if(!res.canceled){
+      player.runCommandAsync("execute unless entity @e[type=brst:fac_correct,r=5] run tellraw @s { \"rawtext\": [{\"text\":\"§c設定に失敗しました\"}] }");
+      player.runCommandAsync("execute as @e[type=brst:fac_correct,r=5,c=1] at @s run scoreboard players set @s arg1 " + Math.floor(res.formValues[0] * 20));
+      player.runCommandAsync("execute as @e[type=brst:fac_correct,r=5,c=1] at @s run scoreboard players set @s arg2 " + Math.floor(res.formValues[1]));
+      player.runCommandAsync("execute as @e[type=brst:fac_correct,r=5,c=1] at @s run particle minecraft:totem_particle ~~0.5~");
+      player.runCommandAsync("execute as @e[type=brst:fac_correct,r=5,c=1] at @s run playsound random.orb @a ~~~ 1 1");
+      player.runCommandAsync("execute if entity @e[type=brst:fac_correct,r=5,c=1] run tellraw @s { \"rawtext\": [{\"text\":\"§a設定しました！\"}] }");
+
+      if(res.formValues[2]) player.runCommandAsync("execute as @e[type=brst:fac_correct,r=5,c=1] at @s run tag @s add sound");
+      else player.runCommandAsync("execute as @e[type=brst:fac_correct,r=5,c=1] at @s run tag @s remove sound");
+    }
+  })
+
+}
+
 function spannerUse(ev){
   const player = ev.source;
-  player.runCommandAsync("execute if entity @e[type=brst:fac_attack,r=5,c=1] run tag @s add setting_attack");
-  player.runCommandAsync("execute at @e[type=brst:fac_attack,r=5,c=1] run particle minecraft:totem_particle ~~0.5~");
+  player.runCommandAsync("execute as @e[tag=can_spanner,r=5,c=1] as @s[type=brst:fac_attack] run tag @p add setting_attack");
+  player.runCommandAsync("execute as @e[tag=can_spanner,r=5,c=1] as @s[type=brst:fac_attack] at @s run particle minecraft:totem_particle ~~0.5~");
+  player.runCommandAsync("execute as @e[tag=can_spanner,r=5,c=1] as @s[type=brst:fac_correct] run tag @p add setting_correct");
+  player.runCommandAsync("execute as @e[tag=can_spanner,r=5,c=1] as @s[type=brst:fac_correct] at @s run particle minecraft:totem_particle ~~0.5~");
+  player.runCommandAsync("execute unless entity @e[tag=can_spanner,r=5,c=1] run tellraw @s { \"rawtext\": [{\"text\":\"§7設定対象がいません。\"}] }");
 }
 
 //----------------------------------------------------Script
@@ -71,6 +100,7 @@ server.system.runInterval(ev => {
     //-------------タグ処理
 
     if (player.hasTag("setting_attack")) settingOfFacAttack(player);
+    if (player.hasTag("setting_correct")) settingOfFacCorrect(player);
 
 
    }
@@ -82,7 +112,7 @@ server.system.runInterval(ev => {
 
    const breakstoneentities=["maker","fac_stick","hole","fac_correct","fac_attack"];
 
-   const breakstonefunctions=["block_upgrade","upgrade_behavior","artifact"];
+   const breakstonefunctions=["block_upgrade","upgrade_behavior","artifact","add_tag"];
 
    const op_player = server.world.getAllPlayers()[0];
    for (const entity of entities){

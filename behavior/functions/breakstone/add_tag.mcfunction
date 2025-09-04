@@ -1,0 +1,1 @@
+tag @e[family=mob,type=!armor_stand,type=!npc] add mob

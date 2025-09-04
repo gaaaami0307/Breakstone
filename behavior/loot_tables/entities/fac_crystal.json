@@ -1,0 +1,14 @@
+{
+  "format_version": "1.20.0",
+  "pools": [
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"brst:mecha_crystal"
+        }
+      ]
+    }
+  ]
+}

@@ -70,6 +70,9 @@
       "mecha_attack" : {
          "textures" : "textures/items/mecha_attack"
       },
+      "mecha_crystal" : {
+         "textures" : "textures/items/mecha_crystal"
+      },
       "mob_soul" : {
          "textures" : "textures/items/mob_soul"
       },

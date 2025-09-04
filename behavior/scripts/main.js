@@ -57,6 +57,33 @@ function settingOfFacCorrect(player){
 
 }
 
+// Fac_crystalの調整
+function settingOfFacCrystal(player){
+
+  player.runCommandAsync("tag @s remove setting_crystal");
+
+  const form = new ModalFormData()
+  .title("結晶化装置の設定")
+  .slider("起動周期(秒)", 0.5, 30, 0.5, 5)
+  .slider("収集範囲(半径)", 5, 30, 5, 10)
+  .toggle("効果音", true);
+
+  form.show(player).then(res=>{
+    if(!res.canceled){
+      player.runCommandAsync("execute unless entity @e[type=brst:fac_crystal,r=5] run tellraw @s { \"rawtext\": [{\"text\":\"§c設定に失敗しました\"}] }");
+      player.runCommandAsync("execute as @e[type=brst:fac_crystal,r=5,c=1] at @s run scoreboard players set @s arg1 " + Math.floor(res.formValues[0] * 20));
+      player.runCommandAsync("execute as @e[type=brst:fac_crystal,r=5,c=1] at @s run scoreboard players set @s arg2 " + Math.floor(res.formValues[1]));
+      player.runCommandAsync("execute as @e[type=brst:fac_crystal,r=5,c=1] at @s run particle minecraft:totem_particle ~~0.5~");
+      player.runCommandAsync("execute as @e[type=brst:fac_crystal,r=5,c=1] at @s run playsound random.orb @a ~~~ 1 1");
+      player.runCommandAsync("execute if entity @e[type=brst:fac_crystal,r=5,c=1] run tellraw @s { \"rawtext\": [{\"text\":\"§a設定しました！\"}] }");
+
+      if(res.formValues[2]) player.runCommandAsync("execute as @e[type=brst:fac_crystal,r=5,c=1] at @s run tag @s add sound");
+      else player.runCommandAsync("execute as @e[type=brst:fac_crystal,r=5,c=1] at @s run tag @s remove sound");
+    }
+  })
+
+}
+
 //使用-スパナ
 function spannerUse(ev){
   const player = ev.source;
@@ -64,6 +91,8 @@ function spannerUse(ev){
   player.runCommandAsync("execute as @e[tag=can_spanner,r=5,c=1] as @s[type=brst:fac_attack] at @s run particle minecraft:totem_particle ~~0.5~");
   player.runCommandAsync("execute as @e[tag=can_spanner,r=5,c=1] as @s[type=brst:fac_correct] run tag @p add setting_correct");
   player.runCommandAsync("execute as @e[tag=can_spanner,r=5,c=1] as @s[type=brst:fac_correct] at @s run particle minecraft:totem_particle ~~0.5~");
+  player.runCommandAsync("execute as @e[tag=can_spanner,r=5,c=1] as @s[type=brst:fac_crystal] run tag @p add setting_crystal");
+  player.runCommandAsync("execute as @e[tag=can_spanner,r=5,c=1] as @s[type=brst:fac_crystal] at @s run particle minecraft:totem_particle ~~0.5~");
   player.runCommandAsync("execute unless entity @e[tag=can_spanner,r=5,c=1] run tellraw @s { \"rawtext\": [{\"text\":\"§7設定対象がいません。\"}] }");
 }
 
@@ -139,6 +168,7 @@ server.system.runInterval(ev => {
 
     if (player.hasTag("setting_attack")) settingOfFacAttack(player);
     if (player.hasTag("setting_correct")) settingOfFacCorrect(player);
+    if (player.hasTag("setting_crystal")) settingOfFacCrystal(player);
 
 
    }

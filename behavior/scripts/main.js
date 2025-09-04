@@ -57,6 +57,7 @@ function settingOfFacCorrect(player){
 
 }
 
+//使用-スパナ
 function spannerUse(ev){
   const player = ev.source;
   player.runCommandAsync("execute as @e[tag=can_spanner,r=5,c=1] as @s[type=brst:fac_attack] run tag @p add setting_attack");
@@ -66,6 +67,40 @@ function spannerUse(ev){
   player.runCommandAsync("execute unless entity @e[tag=can_spanner,r=5,c=1] run tellraw @s { \"rawtext\": [{\"text\":\"§7設定対象がいません。\"}] }");
 }
 
+//使用-経験値の結晶
+function xpCrystalUse(ev){
+  const player = ev.source;
+  player.runCommandAsync("execute as @s[hasitem={item=brst:xp_crystal,quantity=1..}] at @s run xp 1 @s");
+  player.runCommandAsync("execute as @s[hasitem={item=brst:xp_crystal,quantity=1..}] at @s run playsound random.orb @s ~~~ 0.7 1");
+  player.runCommandAsync("execute as @s[hasitem={item=brst:xp_crystal,quantity=1..}] at @s run clear @s brst:xp_crystal 0 1");
+
+  if (player.isSneaking){
+    player.runCommandAsync("execute as @s[hasitem={item=brst:xp_crystal,quantity=2048..}] at @s run xp 2048 @s");
+    player.runCommandAsync("execute as @s[hasitem={item=brst:xp_crystal,quantity=2048..}] at @s run clear @s brst:xp_crystal 0 2048");
+    player.runCommandAsync("execute as @s[hasitem={item=brst:xp_crystal,quantity=1024..}] at @s run xp 1024 @s");
+    player.runCommandAsync("execute as @s[hasitem={item=brst:xp_crystal,quantity=1024..}] at @s run clear @s brst:xp_crystal 0 1024");
+    player.runCommandAsync("execute as @s[hasitem={item=brst:xp_crystal,quantity=512..}] at @s run xp 512 @s");
+    player.runCommandAsync("execute as @s[hasitem={item=brst:xp_crystal,quantity=512..}] at @s run clear @s brst:xp_crystal 0 512");
+    player.runCommandAsync("execute as @s[hasitem={item=brst:xp_crystal,quantity=256..}] at @s run xp 256 @s");
+    player.runCommandAsync("execute as @s[hasitem={item=brst:xp_crystal,quantity=256..}] at @s run clear @s brst:xp_crystal 0 256");
+    player.runCommandAsync("execute as @s[hasitem={item=brst:xp_crystal,quantity=128..}] at @s run xp 128 @s");
+    player.runCommandAsync("execute as @s[hasitem={item=brst:xp_crystal,quantity=128..}] at @s run clear @s brst:xp_crystal 0 128");
+    player.runCommandAsync("execute as @s[hasitem={item=brst:xp_crystal,quantity=64..}] at @s run xp 64 @s");
+    player.runCommandAsync("execute as @s[hasitem={item=brst:xp_crystal,quantity=64..}] at @s run clear @s brst:xp_crystal 0 64");
+    player.runCommandAsync("execute as @s[hasitem={item=brst:xp_crystal,quantity=32..}] at @s run xp 32 @s");
+    player.runCommandAsync("execute as @s[hasitem={item=brst:xp_crystal,quantity=32..}] at @s run clear @s brst:xp_crystal 0 32");
+    player.runCommandAsync("execute as @s[hasitem={item=brst:xp_crystal,quantity=16..}] at @s run xp 16 @s");
+    player.runCommandAsync("execute as @s[hasitem={item=brst:xp_crystal,quantity=16..}] at @s run clear @s brst:xp_crystal 0 16");
+    player.runCommandAsync("execute as @s[hasitem={item=brst:xp_crystal,quantity=8..}] at @s run xp 8 @s");
+    player.runCommandAsync("execute as @s[hasitem={item=brst:xp_crystal,quantity=8..}] at @s run clear @s brst:xp_crystal 0 8");
+    player.runCommandAsync("execute as @s[hasitem={item=brst:xp_crystal,quantity=4..}] at @s run xp 4 @s");
+    player.runCommandAsync("execute as @s[hasitem={item=brst:xp_crystal,quantity=4..}] at @s run clear @s brst:xp_crystal 0 4");
+    player.runCommandAsync("execute as @s[hasitem={item=brst:xp_crystal,quantity=2..}] at @s run xp 2 @s");
+    player.runCommandAsync("execute as @s[hasitem={item=brst:xp_crystal,quantity=2..}] at @s run clear @s brst:xp_crystal 0 2");
+    player.runCommandAsync("execute as @s[hasitem={item=brst:xp_crystal,quantity=1..}] at @s run xp 1 @s");
+    player.runCommandAsync("execute as @s[hasitem={item=brst:xp_crystal,quantity=1..}] at @s run clear @s brst:xp_crystal 0 1");
+  }
+}
 //----------------------------------------------------Script
 
 //アイテム使用
@@ -73,6 +108,9 @@ server.world.afterEvents.itemUse.subscribe(ev => {
     let item = ev.itemStack.typeId;
     if(item == "brst:spanner"){
       spannerUse(ev);
+    }
+    if(item == "brst:xp_crystal"){
+      xpCrystalUse(ev);
     }
 })
 

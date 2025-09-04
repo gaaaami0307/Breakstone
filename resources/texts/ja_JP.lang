@@ -21,6 +21,7 @@ item.brst:cola=§cコーラ
 item.brst:chocolate=§4チョコレート
 item.brst:chocomint=§3チョコミント
 item.brst:candy=§dキャンディ
+item.brst:xp_crystal=経験値の結晶
 item.brst:torch_artifact=§5超松明錬成のアーティファクト
 item.brst:artifact_crystal1=§6アーティファクトクリスタル§lI
 item.brst:artifact_crystal2=§5アーティファクトクリスタル§lII

@@ -49,6 +49,9 @@
       "candy" : {
          "textures" : "textures/items/candy"
       },
+      "xp_crystal" : {
+         "textures" : "textures/items/xp_crystal"
+      },
       "iron_stick" : {
          "textures" : "textures/items/iron_stick"
       },

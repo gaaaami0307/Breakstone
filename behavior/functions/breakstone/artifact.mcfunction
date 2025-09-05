@@ -113,3 +113,5 @@ execute as @a as @s[hasitem={item=brst:trash_artifact3,location=slot.weapon.offh
 execute as @a as @s[hasitem={item=brst:poison_artifact}] at @s positioned ^^^ run effect @s poison 0 3 true
 #wither_artifact
 execute as @a as @s[hasitem={item=brst:wither_artifact}] at @s positioned ^^^ run effect @s wither 0 3 true
+#fire_artifact
+execute as @a as @s[hasitem={item=brst:fire_artifact}] at @s positioned ^^^ run effect @s fire_resistance 12 0 true

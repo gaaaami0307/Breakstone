@@ -94,6 +94,9 @@
       "wither_artifact" : {
           "textures" : "textures/items/wither_artifact"
       },
+      "fire_artifact" : {
+          "textures" : "textures/items/fire_artifact"
+      },
       "poison_artifact" : {
           "textures" : "textures/items/poison_artifact"
       },

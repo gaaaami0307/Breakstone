@@ -31,6 +31,7 @@ item.brst:lava_artifact=§6溶岩生成のアーティファクト
 item.brst:water_artifact=§6水生成のアーティファクト
 item.brst:poison_artifact=§5毒耐性のアーティファクト
 item.brst:wither_artifact=§c衰弱耐性のアーティファクト
+item.brst:fire_artifact=§5火炎耐性のアーティファクト
 item.brst:liquid_artifact=§5液体生成のアーティファクト
 item.brst:attack_artifact1=§6攻撃のアーティファクト
 item.brst:attack_artifact2=§5攻撃のアーティファクト・上

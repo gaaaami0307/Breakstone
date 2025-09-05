@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:fire_artifact_recipe"
+    },
+    "tags": ["abyss_workbench"],
+    "pattern": [
+      "TMT",
+      "McM",
+      "TMT"
+    ],
+    "key": {
+      "T": { "item": "minecraft:blaze_powder" },
+      "M": { "item": "minecraft:diamond" },
+      "c": { "item": "brst:artifact_crystal2" }
+    },
+    "result": {
+      "item": "brst:fire_artifact",
+      "count": 1
+    }
+  }
+}

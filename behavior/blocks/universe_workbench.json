@@ -20,7 +20,7 @@
       "minecraft:crafting_table":{
         "grid_size": 3,
         "crafting_tags":["stone_workbench","copper_workbench","diamond_workbench","abyss_workbench","luminite_workbench","mecha","magic","wood_changer","universe"],
-        "table_name": "全特殊クラフト"
+        "table_name": "特殊クラフト"
       },
       "minecraft:loot": "loot_tables/blocks/universe_workbench.json",
       "minecraft:geometry": "minecraft:geometry.full_block",

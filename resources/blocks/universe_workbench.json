@@ -1,0 +1,19 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "brst:universe_workbench"
+    },
+    "components": {
+      "minecraft:creative_category": {},
+      "minecraft:geometry": "geometry.block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "universe_workbench_top",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:sound": "metal"
+    }
+  }
+}

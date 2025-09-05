@@ -91,6 +91,12 @@
       "water_artifact" : {
           "textures" : "textures/items/water_artifact"
       },
+      "wither_artifact" : {
+          "textures" : "textures/items/wither_artifact"
+      },
+      "poison_artifact" : {
+          "textures" : "textures/items/poison_artifact"
+      },
       "liquid_artifact" : {
           "textures" : "textures/items/liquid_artifact"
       },

@@ -115,3 +115,9 @@ execute as @a as @s[hasitem={item=brst:poison_artifact}] at @s positioned ^^^ ru
 execute as @a as @s[hasitem={item=brst:wither_artifact}] at @s positioned ^^^ run effect @s wither 0 3 true
 #fire_artifact
 execute as @a as @s[hasitem={item=brst:fire_artifact}] at @s positioned ^^^ run effect @s fire_resistance 12 0 true
+#breakstone_artifact
+execute as @a as @s[hasitem={item=brst:breakstone_artifact}] at @s positioned ^^^ run effect @s speed 12 4 true
+execute as @a as @s[hasitem={item=brst:breakstone_artifact}] at @s positioned ^^^ run effect @s strength 12 4 true
+execute as @a as @s[hasitem={item=brst:breakstone_artifact}] at @s positioned ^^^ run effect @s haste 12 4 true
+execute as @a as @s[hasitem={item=brst:breakstone_artifact}] at @s positioned ^^^ run effect @s resistance 12 3 true
+execute as @a as @s[hasitem={item=brst:breakstone_artifact,location=slot.weapon.mainhand}] at @s positioned ^^^ run effect @s resistance 1 4 true

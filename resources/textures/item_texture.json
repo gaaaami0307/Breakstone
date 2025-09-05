@@ -100,6 +100,9 @@
       "poison_artifact" : {
           "textures" : "textures/items/poison_artifact"
       },
+      "breakstone_artifact" : {
+          "textures" : "textures/items/breakstone_artifact"
+      },
       "liquid_artifact" : {
           "textures" : "textures/items/liquid_artifact"
       },

@@ -1,0 +1,27 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:breakstone_artifact_recipe"
+    },
+    "tags": ["luminite_workbench"],
+    "pattern": [
+      "M1m",
+      "2c4",
+      "m3M"
+    ],
+    "key": {
+      "M": { "item": "brst:luminite_block" },
+      "m": { "item": "minecraft:quartz_block" },
+      "1": { "item": "brst:mining_artifact3" },
+      "2": { "item": "brst:attack_artifact3" },
+      "3": { "item": "brst:speed_artifact3" },
+      "4": { "item": "brst:shield_artifact3" },
+      "c": { "item": "minecraft:glowstone" }
+    },
+    "result": {
+      "item": "brst:breakstone_artifact",
+      "count": 1
+    }
+  }
+}

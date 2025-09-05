@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "brst:universe_workbench_recipe"
+    },
+    "tags": ["luminite_workbench"],
+    "pattern": [
+      "123",
+      "4G5",
+      "678"
+    ],
+    "key": {
+      "G": { "item": "minecraft:glowstone" },
+      "1": { "item": "brst:luminite_workbench" },
+      "2": { "item": "brst:abyss_workbench" },
+      "3": { "item": "brst:diamond_workbench" },
+      "4": { "item": "brst:copper_workbench" },
+      "5": { "item": "brst:stone_workbench" },
+      "6": { "item": "brst:wood_changer" },
+      "7": { "item": "brst:mecha_workbench" },
+      "8": { "item": "brst:magic_workbench" }
+    },
+    "result": {
+      "item": "brst:universe_workbench",
+      "count": 1
+    }
+  }
+}

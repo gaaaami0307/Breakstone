@@ -49,6 +49,9 @@
     "magic_workbench_side": {
       "textures": "textures/blocks/magic_workbench_side"
     },
+    "universe_workbench_top": {
+      "textures": "textures/blocks/universe_workbench_top"
+    },
     "none": {
       "textures": "textures/blocks/none"
     },

@@ -180,7 +180,7 @@ server.system.runInterval(ev => {
 
    const breakstoneentities=["maker","fac_stick","hole","fac_correct","fac_attack","fac_crystal"];
 
-   const breakstonefunctions=["block_upgrade","upgrade_behavior","artifact","add_tag","lab_plate"];
+   const breakstonefunctions=["block_upgrade","upgrade_behavior","artifact","add_tag","lab_plate","achieve"];
 
    const op_player = server.world.getAllPlayers()[0];
    for (const entity of entities){

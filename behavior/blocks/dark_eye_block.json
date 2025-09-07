@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "brst:dark_eye_block",
+      "menu_category": { 
+        "category": "Nature",
+        "group": "itemGroup.name.stone"
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 30000
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 50
+      },
+      "minecraft:friction": 0.4,
+      "minecraft:light_emission": 9,
+      "minecraft:light_dampening": 15,
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "dark_eye_block",
+          "render_method": "opaque"
+        }
+      }
+    }
+  }
+}

@@ -55,6 +55,21 @@
     "none": {
       "textures": "textures/blocks/none"
     },
+    "dark_block": {
+      "textures": "textures/blocks/dark_block"
+    },
+    "dark_break_block": {
+      "textures": "textures/blocks/dark_break_block"
+    },
+    "dark_core_block": {
+      "textures": "textures/blocks/dark_core_block"
+    },
+    "dark_eye_block": {
+      "textures": "textures/blocks/dark_eye_block"
+    },
+    "road_block": {
+      "textures": "textures/blocks/road_block"
+    },
     "diamond_workbench_top": {
       "textures": "textures/blocks/diamond_workbench_top"
     },

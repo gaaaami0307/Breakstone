@@ -1,0 +1,19 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "brst:dark_eye_block"
+    },
+    "components": {
+      "minecraft:creative_category": {},
+      "minecraft:geometry": "geometry.block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "dark_eye_block",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:sound": "sculk"
+    }
+  }
+}

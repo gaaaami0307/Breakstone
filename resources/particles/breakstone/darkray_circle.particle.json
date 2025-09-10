@@ -2,9 +2,9 @@
 	"format_version": "1.10.0",
 	"particle_effect": {
 		"description": {
-			"identifier": "brst:test",
+			"identifier": "brst:darkray_circle",
 			"basic_render_parameters": {
-				"material": "particles_alpha",
+				"material": "particles_blend",
 				"texture": "textures/particle/magic_circle_spike"
 			}
 		},
@@ -24,7 +24,7 @@
 			},
 			"minecraft:particle_initial_speed": 0,
 			"minecraft:particle_motion_dynamic": {
-				"rotation_drag_coefficient": 0.4
+				"rotation_drag_coefficient": 0.7
 			},
 			"minecraft:particle_appearance_billboard": {
 				"size": [1, 1],
@@ -43,7 +43,14 @@
 				}
 			},
 			"minecraft:particle_appearance_tinting": {
-				"color": [0.28627, 0, 0, 0.94118]
+				"color": {
+					"interpolant": "v.particle_age / v.particle_lifetime",
+					"gradient": {
+						"0.0": "#FF7A0000",
+						"0.86": "#FF450000",
+						"1.0": "#004B0000"
+					}
+				}
 			}
 		}
 	}

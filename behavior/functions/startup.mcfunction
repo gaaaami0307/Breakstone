@@ -21,6 +21,7 @@ scoreboard objectives add sneak_time dummy
 #func
 scoreboard objectives add func_rotate dummy 
 scoreboard objectives add func_move_f dummy
+scoreboard objectives add func_move_y dummy
 #hole
 scoreboard objectives add interval dummy
 scoreboard objectives add type dummy

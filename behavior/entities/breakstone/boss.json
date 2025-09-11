@@ -1,0 +1,51 @@
+{
+    "format_version": "1.20.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "brst:boss",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "animations": {
+                
+            },
+            "scripts": {
+                
+            }
+        },
+        "components": {       
+            "minecraft:collision_box": {
+                "width": 1,
+                "height": 1
+            },
+            "minecraft:health": {
+                "value": 600,
+                "max": 600
+            },
+            "minecraft:knockback_resistance": {
+                "value": 0.9
+            },
+            "minecraft:physics": {
+                "has_gravity": false
+            },
+            "minecraft:pushable": {
+            "is_pushable": false,
+            "is_pushable_by_piston": false
+            },
+            "minecraft:nameable": {},
+            "minecraft:boss": {
+            "should_darken_sky": true,
+            "hud_range": 125,
+            "name": "§4モノリス"
+            },
+            "minecraft:breathable": {
+              "totalSupply": 300,
+              "breathes_air": true,
+              "breathes_lava": true,
+              "breathes_solids": true,
+              "breathes_water": true
+            }
+        },
+        "component_groups": {
+        }
+    }
+}

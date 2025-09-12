@@ -1,5 +1,1 @@
-summon brst:boss_target darkray ~~~
-summon brst:boss_target darkray ~~~
-summon brst:boss_target darkray ~~~
-summon brst:boss_target darkray ~~~
-summon brst:boss_target darkray ~~~
+summon brst:boss_target darkray 1000 0 1000

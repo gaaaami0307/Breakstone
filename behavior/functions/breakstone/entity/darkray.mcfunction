@@ -27,8 +27,8 @@ execute as @s[scores={death_timer=5}] at @s positioned ~~-10~ run particle brst:
 #移動
 execute as @s[scores={death_timer=5..}] at @s positioned ~~~ run tp @s ^^^0.5 true
 #着弾音声
-execute as @s[scores={death_timer=5..}] at @s positioned ~~-10~ unless block ~~~ air run playsound mob.breeze.shoot @a ~~~ 0.5 0.3
-execute as @s[scores={death_timer=5..}] at @s positioned ~~-10~ unless block ~~~ air run kill @s
+execute as @s[scores={death_timer=5..}] at @s positioned ~~-10~ unless block ~~~ air unless block ~~~ structure_void run playsound mob.breeze.shoot @a ~~~ 0.5 0.3
+execute as @s[scores={death_timer=5..}] at @s positioned ~~-10~ unless block ~~~ air unless block ~~~ structure_void run kill @s
 #パーティクル
 execute as @s[scores={death_timer=5..}] at @s positioned ~~-10~ run particle brst:darkray ~~~
 #当たり判定--E_dr_hitter

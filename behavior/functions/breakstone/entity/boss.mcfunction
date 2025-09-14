@@ -12,25 +12,41 @@ execute as @s[type=brst:boss] as @s[scores={arg1=20..}] at @s run structure load
 execute as @s[type=brst:boss] as @s[scores={arg1=20..}] at @s run scoreboard players set @s arg1 0
 #コアからダメージを受ける
 execute as @s[type=brst:boss] at @s if entity @e[type=item,name=§r§r§r§r§0暗黒のコア] run damage @s 10 self_destruct
-execute as @s[type=brst:boss] at @s if entity @e[type=item,name=§r§r§r§r§0暗黒のコア] run playsound mob.enderdragon.hit @a ~~~ 1 1
+execute as @s[type=brst:boss] at @s if entity @e[type=item,name=§r§r§r§r§0暗黒のコア] run playsound mob.enderdragon.hit @a ~~~ 1 1 50
 execute as @s[type=brst:boss] at @s if entity @e[type=item,name=§r§r§r§r§0暗黒のコア] run kill @e[type=item,name=§r§r§r§r§0暗黒のコア,c=1]
 #技の発動
 execute as @s[type=brst:boss] as @s[tag=!no_attack] if entity @s[scores={attack_time=0}] at @s run scoreboard players add @s cooldown 1
 execute as @s[type=brst:boss] unless entity @s[scores={rnd_attack=0}] at @s run scoreboard players add @s attack_time 1
 execute as @s[type=brst:boss] if entity @s[scores={rnd_attack=0}] at @s run scoreboard players set @s attack_time 0
-execute as @s[type=brst:boss] if score @s cooldown >= @s cooldown_max at @s run scoreboard players random @s rnd_attack 1 3
+execute as @s[type=brst:boss] if score @s cooldown >= @s cooldown_max at @s run scoreboard players random @s rnd_attack 1 5
 execute as @s[type=brst:boss] if score @s cooldown >= @s cooldown_max at @s run scoreboard players set @s cooldown 0
-#技1
+#技1 暗黒光線
 execute as @s[type=brst:boss] if entity @s[scores={rnd_attack=1}] if entity @s[scores={attack_time=1}] at @s run function breakstone/boss/summon_darkray
-execute as @s[type=brst:boss] if entity @s[scores={rnd_attack=1}] if entity @s[scores={attack_time=11}] at @s run function breakstone/boss/summon_darkray
 execute as @s[type=brst:boss] if entity @s[scores={rnd_attack=1}] if entity @s[scores={attack_time=21}] at @s run function breakstone/boss/summon_darkray
-execute as @s[type=brst:boss] if entity @s[scores={rnd_attack=1}] if entity @s[scores={attack_time=21..}] at @s run scoreboard players set @s rnd_attack 0
-#技2
+execute as @s[type=brst:boss] if entity @s[scores={rnd_attack=1}] if entity @s[scores={attack_time=41}] at @s run function breakstone/boss/summon_darkray
+execute as @s[type=brst:boss] if entity @s[scores={rnd_attack=1}] if entity @s[scores={attack_time=41..}] at @s run scoreboard players set @s rnd_attack 0
+#技2 連続岩出現
 execute as @s[type=brst:boss] if entity @s[scores={rnd_attack=2}] if entity @s[scores={attack_time=1}] at @s run function breakstone/boss/summon_small_rock_shot
 execute as @s[type=brst:boss] if entity @s[scores={rnd_attack=2}] if entity @s[scores={attack_time=2..}] at @s run scoreboard players set @s rnd_attack 0
-#技3
-execute as @s[type=brst:boss] if entity @s[scores={rnd_attack=3}] if entity @s[scores={attack_time=1}] at @s run execute as @a[r=23,rm=2] at @s run summon brst:boss_target small_rock_ready
-execute as @s[type=brst:boss] if entity @s[scores={rnd_attack=3}] if entity @s[scores={attack_time=21}] at @s run execute as @a[r=23,rm=2] at @s run summon brst:boss_target small_rock_ready
+#技3 足元に岩、遠距離に爆発
+execute as @s[type=brst:boss] if entity @s[scores={rnd_attack=3}] if entity @s[scores={attack_time=1}] at @s run execute as @a[r=23,rm=2,tag=battle] at @s run summon brst:boss_target small_rock_ready
+execute as @s[type=brst:boss] if entity @s[scores={rnd_attack=3}] if entity @s[scores={attack_time=21}] at @s run execute as @a[r=23,rm=2,tag=battle] at @s run summon brst:boss_target small_rock_ready
+execute as @s[type=brst:boss] if entity @s[scores={rnd_attack=3}] if entity @s[scores={attack_time=21}] at @s run execute as @a[rm=23,r=30,tag=battle] at @s run summon brst:dark_explode
 execute as @s[type=brst:boss] if entity @s[scores={rnd_attack=3}] if entity @s[scores={attack_time=22..}] at @s run scoreboard players set @s rnd_attack 0
+#技4 全員に爆発
+execute as @s[type=brst:boss] if entity @s[scores={rnd_attack=4}] if entity @s[scores={attack_time=1}] at @s run execute as @a[r=23,rm=2,tag=battle] at @s run summon brst:dark_explode
+execute as @s[type=brst:boss] if entity @s[scores={rnd_attack=4}] if entity @s[scores={attack_time=2..}] at @s run scoreboard players set @s rnd_attack 0
+#技5 誰か一人の８方を岩で囲む
+execute as @s[type=brst:boss] if entity @s[scores={rnd_attack=5}] if entity @s[scores={attack_time=1}] at @s run execute as @r[r=18,rm=6,tag=battle] at @s run tag @s add boss_four_rock
+execute as @s[type=brst:boss] if entity @s[scores={rnd_attack=5}] if entity @s[scores={attack_time=1}] at @s run execute as @a[tag=boss_four_rock] at @s run summon brst:boss_target small_rock_ready ~-3~~
+execute as @s[type=brst:boss] if entity @s[scores={rnd_attack=5}] if entity @s[scores={attack_time=1}] at @s run execute as @a[tag=boss_four_rock] at @s run summon brst:boss_target small_rock_ready ~3~~
+execute as @s[type=brst:boss] if entity @s[scores={rnd_attack=5}] if entity @s[scores={attack_time=2}] at @s run execute as @a[tag=boss_four_rock] at @s run summon brst:boss_target small_rock_ready ~~~3
+execute as @s[type=brst:boss] if entity @s[scores={rnd_attack=5}] if entity @s[scores={attack_time=3}] at @s run execute as @a[tag=boss_four_rock] at @s run summon brst:boss_target small_rock_ready ~~~-3
+execute as @s[type=brst:boss] if entity @s[scores={rnd_attack=5}] if entity @s[scores={attack_time=4}] at @s run execute as @a[tag=boss_four_rock] at @s run summon brst:boss_target small_rock_ready ~-3~~-3
+execute as @s[type=brst:boss] if entity @s[scores={rnd_attack=5}] if entity @s[scores={attack_time=5}] at @s run execute as @a[tag=boss_four_rock] at @s run summon brst:boss_target small_rock_ready ~3~~-3
+execute as @s[type=brst:boss] if entity @s[scores={rnd_attack=5}] if entity @s[scores={attack_time=6}] at @s run execute as @a[tag=boss_four_rock] at @s run summon brst:boss_target small_rock_ready ~3~~3
+execute as @s[type=brst:boss] if entity @s[scores={rnd_attack=5}] if entity @s[scores={attack_time=7}] at @s run execute as @a[tag=boss_four_rock] at @s run summon brst:boss_target small_rock_ready ~-3~~3
+execute as @s[type=brst:boss] if entity @s[scores={rnd_attack=5}] if entity @s[scores={attack_time=8}] at @s run execute as @a[tag=boss_four_rock] at @s run tag @s remove boss_four_rock
+execute as @s[type=brst:boss] if entity @s[scores={rnd_attack=5}] if entity @s[scores={attack_time=20..}] at @s run scoreboard players set @s rnd_attack 0
 #難易度分け与え(最後に持ってくること)
 execute as @s[type=brst:boss] at @s run scoreboard players operation @e[type=brst:boss_target] diff = @s diff

@@ -41,7 +41,7 @@ execute as @s[scores={death_timer=5..}] at @s positioned ~~-10~ as @e[tag=E_dr_h
 #ヒット時消滅
 execute as @s[scores={death_timer=5..}] at @s positioned ~~~ if entity @e[tag=E_dr_hitter] run scoreboard players set @s death_timer 1000000
 #ヒット時ダメージ*最後に持ってくること*
-execute as @s[scores={death_timer=5..}] at @s positioned ~~-10~ as @e[tag=!E_dr,type=player] run damage @e[tag=E_dr_hitter,c=1] 12 entity_attack entity @e[type=brst:boss,c=1]
+execute as @s[scores={death_timer=5..}] at @s positioned ~~-10~ as @e[tag=!E_dr,type=player] run damage @e[tag=E_dr_hitter,c=1] 12 entity_attack entity @e[type=brst:darkray,c=1]
 #ヒット処理終了
 execute as @s[scores={death_timer=5..}] at @s positioned ~~-10~ as @a[tag=E_dr_hitter] run tag @s remove E_dr_hitter
 execute as @s[scores={death_timer=5..}] at @s positioned ~~-10~ as @e[tag=E_dr_hitter] run tag @s remove E_dr_hitter

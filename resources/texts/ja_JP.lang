@@ -72,3 +72,7 @@ tile.brst:dark_block.name=§0暗黒石
 tile.brst:dark_break_block.name=§0脆い暗黒石
 tile.brst:dark_eye_block.name=§0眼
 tile.brst:dark_core_block.name=§r§r§r§r§0暗黒のコア
+entity.brst:boss.name=§4モノリス
+entity.brst:darkray.name=§c暗§c黒§4光§4線
+entity.brst:small_rock.name=§4突き上げた岩
+entity.brst:dark_explode.name=§4爆破魔法

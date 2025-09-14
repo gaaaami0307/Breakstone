@@ -1,0 +1,1 @@
+summon brst:boss_target small_rock_shot 1000 0 1000

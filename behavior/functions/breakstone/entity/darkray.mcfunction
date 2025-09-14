@@ -30,7 +30,8 @@ execute as @s[scores={death_timer=5..}] at @s positioned ~~~ run tp @s ^^^0.5 tr
 execute as @s[scores={death_timer=5..}] at @s positioned ~~-10~ unless block ~~~ air unless block ~~~ structure_void run playsound mob.breeze.shoot @a ~~~ 0.5 0.3
 execute as @s[scores={death_timer=5..}] at @s positioned ~~-10~ unless block ~~~ air unless block ~~~ structure_void run kill @s
 #パーティクル
-execute as @s[scores={death_timer=5..}] at @s positioned ~~-10~ run particle brst:darkray ~~~
+execute as @s[scores={death_timer=5..}] at @s if entity @e[type=brst:boss,tag=less_particle] positioned ~~-10~ run particle minecraft:basic_flame_particle ~~~
+execute as @s[scores={death_timer=5..}] at @s unless entity @e[type=brst:boss,tag=less_particle] positioned ~~-10~ run particle brst:darkray ~~~
 #当たり判定--E_dr_hitter
 execute as @s[scores={death_timer=5..}] at @s positioned ~~-10~ as @e[type=player,x=~-0.3,y=~-0.3,z=~-0.3,dx=0,dy=0,dz=0] if entity @s[x=~-0.7,y=~-0.7,z=~-0.7,dx=0,dy=0,dz=0] run tag @s add E_dr_hitter
 #ヒット時効果音 audio/pitch
@@ -40,7 +41,7 @@ execute as @s[scores={death_timer=5..}] at @s positioned ~~-10~ as @e[tag=E_dr_h
 #ヒット時消滅
 execute as @s[scores={death_timer=5..}] at @s positioned ~~~ if entity @e[tag=E_dr_hitter] run scoreboard players set @s death_timer 1000000
 #ヒット時ダメージ*最後に持ってくること*
-execute as @s[scores={death_timer=5..}] at @s positioned ~~-10~ as @e[tag=!E_dr,type=player] run damage @e[tag=E_dr_hitter,c=1] 12 entity_attack
+execute as @s[scores={death_timer=5..}] at @s positioned ~~-10~ as @e[tag=!E_dr,type=player] run damage @e[tag=E_dr_hitter,c=1] 12 entity_attack entity @e[type=brst:boss,c=1]
 #ヒット処理終了
 execute as @s[scores={death_timer=5..}] at @s positioned ~~-10~ as @a[tag=E_dr_hitter] run tag @s remove E_dr_hitter
 execute as @s[scores={death_timer=5..}] at @s positioned ~~-10~ as @e[tag=E_dr_hitter] run tag @s remove E_dr_hitter

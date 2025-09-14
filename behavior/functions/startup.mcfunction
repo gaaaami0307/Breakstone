@@ -26,3 +26,7 @@ scoreboard objectives add func_move_y dummy
 scoreboard objectives add interval dummy
 scoreboard objectives add type dummy
 scoreboard objectives add chain dummy
+#boss
+scoreboard objectives add diff dummy
+scoreboard objectives add cooldown dummy
+scoreboard objectives add cooldown_max dummy

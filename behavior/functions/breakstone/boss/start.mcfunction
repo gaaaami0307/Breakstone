@@ -2,6 +2,7 @@
 #less_particle 
 #unless entity @e[type=brst:boss,tag=less_particle]
 #diff 1=easy 2=normal 3=hard 4=breakstone
+stopsound @a
 summon brst:boss 1000 0 1000
 execute as @a at @s run playsound random.anvil_land @s ~ ~ ~ 1 0.4 50
 execute as @a at @s run playsound mob.wither.spawn @a ~ ~ ~ 1 0.5 50
@@ -14,4 +15,6 @@ camerashake add @s 2 0.5
 structure load boss_normal 998 0 998 0_degrees none
 tag @a[m=s] add battle
 #settings
-execute as @s[type=brst:boss] at @s run scoreboard players set @s cooldown_max 200
+execute as @e[type=brst:boss] at @s run scoreboard players set @s cooldown_max 200
+execute as @e[type=brst:boss] at @s run scoreboard players set @s rnd_attack 0
+execute as @e[type=brst:boss] at @s run scoreboard players set @s attack_time 0

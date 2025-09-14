@@ -30,3 +30,5 @@ scoreboard objectives add chain dummy
 scoreboard objectives add diff dummy
 scoreboard objectives add cooldown dummy
 scoreboard objectives add cooldown_max dummy
+scoreboard objectives add rnd_attack dummy
+scoreboard objectives add attack_time dummy

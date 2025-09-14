@@ -18,6 +18,8 @@ execute as @s[type=brst:small_rock] as @s[scores={death_timer=5}] at @s align xy
 execute as @s[type=brst:small_rock] as @s[scores={death_timer=7}] at @s align xyz positioned ~0.5 0 ~0.5 run damage @e[type=player,r=2] 10 entity_attack entity @e[type=brst:boss,c=1]
 execute as @s[type=brst:small_rock] as @s[scores={death_timer=7}] at @s align xyz positioned ~0.5 0 ~0.5 run tp @e[type=player,r=2] ~~4~
 #消滅判定
-execute as @s[type=brst:small_rock] as @s[scores={death_timer=60..}] at @s align xyz positioned ~0.5 0 ~0.5 run particle minecraft:cauldron_explosion_emitter ~~1~
-execute as @s[type=brst:small_rock] as @s[scores={death_timer=60..}] at @s align xyz positioned ~0.5 0 ~0.5 run fill ~-1~~-1 ~1~3~1 minecraft:air replace brst:dark_break_block
-execute as @s[type=brst:small_rock] as @s[scores={death_timer=60..}] at @s align xyz positioned ~0.5 0 ~0.5 run kill @s
+execute as @s[type=brst:small_rock] as @s[scores={death_timer=10..}] at @s align xyz positioned ~0.5 0 ~0.5 unless block ~~~ brst:dark_break_block run scoreboard players set @s death_timer 700
+execute as @s[type=brst:small_rock] as @s[scores={death_timer=10..}] at @s align xyz positioned ~0.5 0 ~0.5 unless block ~~1~ brst:dark_break_block run scoreboard players set @s death_timer 700
+execute as @s[type=brst:small_rock] as @s[scores={death_timer=600..}] at @s align xyz positioned ~0.5 0 ~0.5 run particle minecraft:cauldron_explosion_emitter ~~1~
+execute as @s[type=brst:small_rock] as @s[scores={death_timer=600..}] at @s align xyz positioned ~0.5 0 ~0.5 run fill ~-1~~-1 ~1~3~1 minecraft:air replace brst:dark_break_block
+execute as @s[type=brst:small_rock] as @s[scores={death_timer=600..}] at @s align xyz positioned ~0.5 0 ~0.5 run kill @s
